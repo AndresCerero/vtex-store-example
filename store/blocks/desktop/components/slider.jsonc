@@ -1,0 +1,46 @@
+{
+  /*--ZoneSlider---*/
+  "flex-layout.row#__zoneslider": {
+    "title": "Text no one home",
+    "children": ["list-context.image-list#slider"],
+    "props": {
+      "fullWidth": true
+    }
+  },
+
+  /*
+  "flex-layout.col#text__zoneslider": {
+    "title": "Text col one home",
+    "children": ["list-context.image-list#slider"],
+    "props": {
+      "width":"100%"
+    }
+  },*/
+
+  /*---Slider---*/
+  "list-context.image-list#slider": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "preload": true,
+      "height": 844,
+      "images": [
+        {
+          "loading": "eager",
+          "image": "assets/img/HeroDesktop2.png",
+          "description": "something something"
+        }
+      ]
+    }
+  },
+
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  /*--InfocardFile--*/
+  "flex-layout.row#__zoneCard": {
+    "title": "Text no one home",
+    "children": ["flex-layout.col#__zoneCard"],
+    "props": {}
+  },
+  "flex-layout.col#__zoneCard": {
+    "title": "Text col one home",
+    "children": ["rich-text#home__h1", "slider-layout#__Card"],
+    "props": {}
+  },
+
+  /*--infocardSlider--*/
+
+  "rich-text#home__h1": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "An amazing product.",
+      "font": "t-heading-5"
+    }
+  },
+
+  "slider-layout#__Card": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    },
+    "children": [
+      "info-card#prueba",
+      "info-card#prueba",
+      "info-card#prueba",
+      "info-card#prueba"
+    ]
+  },
+
+  "info-card#prueba": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "assets/img/image_1.png",
+      "headline": "Heading",
+      "callToActionText": "Ver precio",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-example",
+      "textAlignment": "center",
+      "bodyText": "Builder platform is made by, buildership platform is made by..."
+    }
+  }
+}

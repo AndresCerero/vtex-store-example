@@ -1,0 +1,5 @@
+{
+  "responsive-layout.phone#Demo2": {
+    "children": ["flex-layout.row#__zoneCard"]
+  }
+}

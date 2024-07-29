@@ -1,0 +1,12 @@
+.flexRow--desktop__header{
+    background-color: rgb(255, 255, 255);
+}
+
+.flexColChild--collections__departament :global(.vtex-menu-2-x-styledLinkContent){
+    background-color: red;
+    flex-direction: column;
+}
+
+.flexColChild--collections__departament :global(.vtex-menu-2-x-styledLinkContent):hover{
+    background-color: rgb(47, 51, 99);
+}

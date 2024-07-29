@@ -1,0 +1,11 @@
+{
+  "store.home": { 
+    "blocks": [
+      "flex-layout.row#home__menudestacado",
+      "responsive-layout.desktop#desktop__screen--home",
+      "responsive-layout.phone#Demo2",
+      "flex-layout.row#__zoneCard",
+      "flex-layout.row#home__summary"
+    ]
+  }  
+}

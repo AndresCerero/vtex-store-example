@@ -1,0 +1,7 @@
+{
+  "store.product": {
+    "children": [
+       "add-to-list-btn"
+    ]
+  }
+}

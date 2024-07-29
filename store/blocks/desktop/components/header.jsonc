@@ -1,0 +1,37 @@
+{
+  
+  "sticky-layout#desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#desktop"]
+  },
+
+  "flex-layout.row#desktop": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "desktop__header"
+      //"fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#megamenu_desktop",
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#spacer",
+      "search-bar",
+      "flex-layout.col#header-menu",
+      "minicart.v2",
+      "login"
+    ]
+  },
+
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo"]
+  }
+
+}

@@ -1,0 +1,67 @@
+{
+  /*--Slider summary ---*/
+
+  "flex-layout.row#home__summary": {
+    "title": "Text no one home",
+    "children": ["flex-layout.col#home__summary"],
+    "props": {}
+  },
+
+  "flex-layout.col#home__summary": {
+    "title": "Text no one home",
+    "children": ["rich-text#home__h1", "list-context.product-list#demo1"],
+    "props": {}
+  },
+
+  "rich-text#home__h1": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "An amazing product.",
+      "font": "t-heading-5"
+    }
+  },
+
+  "product-summary.shelf#demo1": {
+    "children": [
+      "stack-layout#demo1",
+      "add-to-list-btn",
+      "product-summary-image",
+      "product-summary-name",
+      "product-rating-inline",
+      "product-summary-space",
+      "product-summary-price",
+      "product-summary-buy-button"
+    ]
+  },
+
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf#demo1"],
+    "children": ["slider-layout#__summary"]
+  },
+
+  "slider-layout#__summary": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+
+  "stack-layout#demo1": {
+    "children": ["vtex.product-highlights@2.x:product-highlights"]
+  },
+  "vtex.product-highlights@2.x:product-highlights": {
+    "children": ["product-highlight-text"]
+  },
+  "product-highlight-text": {
+    "props": {
+      "message": "{highlightName}"
+    }
+  }
+}

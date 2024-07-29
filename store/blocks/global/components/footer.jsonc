@@ -1,0 +1,14 @@
+{
+  
+  "flex-layout.row#footer": { 
+    "children": [
+      "image"
+    ]
+  },
+  "image": {
+    "props": {
+      "width": 100,
+      "src": "assets/img/Logo.svg"
+    }
+  }
+}

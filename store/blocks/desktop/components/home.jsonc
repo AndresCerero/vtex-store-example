@@ -1,0 +1,8 @@
+{
+  "flex-layout.row#home__section": {
+    "children": ["flex-layout.row#__zoneslider"],
+    "props": {
+      "fullWidth": true
+    }
+  }
+}

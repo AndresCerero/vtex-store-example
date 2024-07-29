@@ -1,0 +1,41 @@
+{
+    "flex-layout.col#megamenu_desktop": {
+      "children": ["flex-layout.row#trigger-desktop"]
+    },
+
+    "flex-layout.row#trigger-desktop": {
+      "props": {
+        "horizontalAlign": "center",
+        "verticalAlign": "center",
+        "preventHorizontalStretch": true,
+        "preventVerticalStretch": true
+      },
+      "children": [
+        "mega-menu#desktop",
+        "mega-menu-trigger-btn"
+      ]
+    },
+
+    /*"flex-layout.row#mega-menu": {
+      "children": ["mega-menu#desktop"]
+    },*/
+    
+    "mega-menu#desktop": {
+      "props": {
+        "openOnly": "horizontal"
+      }
+    },
+
+    /*"flex-layout.col#trigger-mega-menu": {
+      "props": {
+        "verticalAlign": "middle"
+      },
+      "children": ["mega-menu-trigger-btn"]
+    },*/
+
+    "mega-menu-trigger-btn": {
+      "props": {
+        "Drawer": "drawer"
+      }
+    }
+}
