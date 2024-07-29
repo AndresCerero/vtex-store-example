@@ -1,7 +1,5 @@
 @font-face {
     font-family: "Lexend";
-    font-style: normal;
-    font-weight: 400;
     src: local("Lexend"), 
         url(assets/fonts/LexendVariableFont.ttf);
   }

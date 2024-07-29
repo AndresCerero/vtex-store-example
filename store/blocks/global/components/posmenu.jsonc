@@ -44,8 +44,8 @@
       },
       "iconProps": {
         "id": "fast-food",
-        "size": 16,
-        "viewBox": "0 0 16 16",
+        "size": 20,
+        "viewBox": "0 0 20 20",
         "activeClassName": "rebel-pink",
         "mutedClassName": "c-action-primary"
       },
@@ -66,8 +66,8 @@
       },
       "iconProps": {
         "id": "fitness",
-        "size": 16,
-        "viewBox": "0 0 16 16",
+        "size": 20,
+        "viewBox": "0 0 20 20",
         "activeClassName": "rebel-pink",
         "mutedClassName": "c-action-primary"
       },
@@ -88,8 +88,8 @@
       },
       "iconProps": {
         "id": "snow",
-        "size": 16,
-        "viewBox": "0 0 16 16",
+        "size": 20,
+        "viewBox": "0 0 20 20",
         "activeClassName": "rebel-pink",
         "mutedClassName": "c-action-primary"
       },
@@ -110,8 +110,8 @@
       },
       "iconProps": {
         "id": "holiday",
-        "size": 16,
-        "viewBox": "0 0 16 16",
+        "size": 20,
+        "viewBox": "0 0 20 20",
         "activeClassName": "rebel-pink",
         "mutedClassName": "c-action-primary"
       },
@@ -132,8 +132,8 @@
       },
       "iconProps": {
         "id": "hotel",
-        "size": 16,
-        "viewBox": "0 0 16 16",
+        "size": 20,
+        "viewBox": "0 0 20 20",
         "activeClassName": "rebel-pink",
         "mutedClassName": "c-action-primary"
       },
@@ -154,8 +154,8 @@
       },
       "iconProps": {
         "id": "house",
-        "size": 16,
-        "viewBox": "0 0 16 16",
+        "size": 20,
+        "viewBox": "0 0 20 20",
         "activeClassName": "rebel-pink",
         "mutedClassName": "c-action-primary"
       },
@@ -176,8 +176,8 @@
       },
       "iconProps": {
         "id": "hotel",
-        "size": 16,
-        "viewBox": "0 0 16 16",
+        "size": 20,
+        "viewBox": "0 0 20 20",
         "activeClassName": "rebel-pink",
         "mutedClassName": "c-action-primary"
       },
@@ -198,8 +198,8 @@
       },
       "iconProps": {
         "id": "spa",
-        "size": 16,
-        "viewBox": "0 0 16 16",
+        "size": 20,
+        "viewBox": "0 0 20 20",
         "activeClassName": "rebel-pink",
         "mutedClassName": "c-action-primary"
       },
@@ -220,8 +220,8 @@
       },
       "iconProps": {
         "id": "check__room",
-        "size": 16,
-        "viewBox": "0 0 16 16",
+        "size": 20,
+        "viewBox": "0 0 20 20",
         "activeClassName": "rebel-pink",
         "mutedClassName": "c-action-primary"
       },
@@ -242,8 +242,8 @@
       },
       "iconProps": {
         "id": "beach",
-        "size": 16,
-        "viewBox": "0 0 16 16",
+        "size": 20,
+        "viewBox": "0 0 20 20",
         "activeClassName": "rebel-pink",
         "mutedClassName": "c-action-primary"
       },
@@ -264,8 +264,8 @@
       },
       "iconProps": {
         "id": "elderly",
-        "size": 16,
-        "viewBox": "0 0 16 16",
+        "size": 20,
+        "viewBox": "0 0 20 20",
         "activeClassName": "rebel-pink",
         "mutedClassName": "c-action-primary"
       },
@@ -286,8 +286,8 @@
       },
       "iconProps": {
         "id": "moped",
-        "size": 16,
-        "viewBox": "0 0 16 16",
+        "size": 20,
+        "viewBox": "0 0 20 20",
         "activeClassName": "rebel-pink",
         "mutedClassName": "c-action-primary"
       },
@@ -308,8 +308,8 @@
       },
       "iconProps": {
         "id": "beer",
-        "size": 16,
-        "viewBox": "0 0 16 16",
+        "size": 20,
+        "viewBox": "0 0 20 20",
         "activeClassName": "rebel-pink",
         "mutedClassName": "c-action-primary"
       },

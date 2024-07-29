@@ -4,7 +4,8 @@
   "flex-layout.col#header-menu": {
     "props": {
       "horizontalAlign":"center",
-      "verticalAlign":"middle"
+      "verticalAlign":"middle",
+      "blockClass":"header__menu"
     },
     "children": ["vtex.menu@2.x:menu#websites"]
   },

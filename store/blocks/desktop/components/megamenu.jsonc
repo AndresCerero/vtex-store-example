@@ -8,7 +8,11 @@
         "horizontalAlign": "center",
         "verticalAlign": "center",
         "preventHorizontalStretch": true,
-        "preventVerticalStretch": true
+        "preventVerticalStretch": true,
+        "blockClass":[
+          "h100"
+        ]
+
       },
       "children": [
         "mega-menu#desktop",
