@@ -7,18 +7,19 @@
   },
   "flex-layout.col#__zoneCard": {
     "title": "Text col one home",
-    "children": ["rich-text#home__h1", "slider-layout#__Card"],
+    "children": ["rich-text#home__h2", "slider-layout#__Card"],
     "props": {}
   },
 
   /*--infocardSlider--*/
 
-  "rich-text#home__h1": {
+  "rich-text#home__h2": {
     "props": {
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
+      //"textAlignment": "LEFT",
+      //"textPosition": "LEFT",
       "text": "An amazing product.",
-      "font": "t-heading-5"
+      "font": "heading-6",
+      "blockClass":"Tittle_InfoCard"
     }
   },
 
@@ -26,31 +27,38 @@
     "props": {
       "itemsPerPage": {
         "desktop": 3,
-        "tablet": 1,
-        "phone": 1
+        "tablet": 2,
+        "phone": 2
       },
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
-      "blockClass": "carousel"
+      "blockClass": "Carousel__InfoCard"
     },
     "children": [
-      "info-card#prueba",
-      "info-card#prueba",
-      "info-card#prueba",
-      "info-card#prueba"
+      "flex-layout.col#Info__Card",
+      "flex-layout.col#Info__Card",
+      "flex-layout.col#Info__Card",
+      "flex-layout.col#Info__Card"
     ]
+  },
+
+  "flex-layout.col#Info__Card": {
+    "title": "Text no one home",
+    "children": ["info-card#prueba"],
+    "props": {
+    }
   },
 
   "info-card#prueba": {
     "props": {
       "id": "info-card-example",
       "isFullModeStyle": false,
-      "textPosition": "left",
+      "textPosition": "center",
       "imageUrl": "assets/img/image_1.png",
       "headline": "Heading",
       "callToActionText": "Ver precio",
       "callToActionUrl": "/sale/d",
-      "blockClass": "info-card-example",
+      "blockClass": "info__card",
       "textAlignment": "center",
       "bodyText": "Builder platform is made by, buildership platform is made by..."
     }

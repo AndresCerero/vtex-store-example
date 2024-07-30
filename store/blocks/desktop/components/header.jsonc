@@ -23,7 +23,7 @@
       "search-bar",
       "flex-layout.col#header-menu",
       "minicart.v2",
-      "login"
+      "flex-layout.col#button-desktop"
     ]
   },
 
@@ -32,6 +32,20 @@
       "verticalAlign": "middle"
     },
     "children": ["logo"]
+  },
+
+  "flex-layout.col#button-desktop": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "button__header"
+    },
+    "children": ["login"]
+  },
+
+  "login":{
+    "props":{
+      "iconLabel":"Login"
+    }
   }
 
 }
