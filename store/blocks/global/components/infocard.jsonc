@@ -3,20 +3,22 @@
   "flex-layout.row#__zoneCard": {
     "title": "Text no one home",
     "children": ["flex-layout.col#__zoneCard"],
-    "props": {}
+    "props": {
+      "blockClass": "Home__InfoCard"
+    }
   },
   "flex-layout.col#__zoneCard": {
     "title": "Text col one home",
     "children": ["rich-text#home__h2", "slider-layout#__Card"],
-    "props": {}
+    "props": {
+      "blockClass": "Home__Section--InfoCard"
+    }
   },
 
   /*--infocardSlider--*/
 
   "rich-text#home__h2": {
     "props": {
-      //"textAlignment": "LEFT",
-      //"textPosition": "LEFT",
       "text": "An amazing product.",
       "font": "heading-6",
       "blockClass":"Tittle_InfoCard"
@@ -54,7 +56,7 @@
       "id": "info-card-example",
       "isFullModeStyle": false,
       "textPosition": "center",
-      "imageUrl": "assets/img/image_1.png",
+      "imageUrl": "assets/img/image_2.png",
       "headline": "Heading",
       "callToActionText": "Ver precio",
       "callToActionUrl": "/sale/d",

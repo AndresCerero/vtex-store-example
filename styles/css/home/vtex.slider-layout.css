@@ -1,4 +1,21 @@
+/*---|Home|Slider|InfoCard|--*/
+
 .sliderLayoutContainer--Carousel__InfoCard{
-    background-color: beige;
-    padding: 0 40px 0 40px;
+    padding: 0 40px 80px 40px;
+}
+
+.paginationDotsContainer--Carousel__InfoCard{
+    position: absolute;
+    height: 80px;
+    align-items: center;
+}
+
+/*--|Home|Slider|Summary|--*/
+
+.sliderLayoutContainer--carousel__summary{
+    padding: 0 40px 80px 40px;
+}
+
+.slideChildrenContainer--carousel__summary{
+    margin: 0 5px 0 10px;
 }

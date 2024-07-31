@@ -1,19 +1,16 @@
 .infoCardContainer--info__card{
     flex-direction: column-reverse;
-    background-color: blue;
     margin: 0 20px 0 20px;
+    border-radius: 12px;
+    padding: 0;
 }
 
 .infoCardTextContainer--info__card{
     width: max-content;
 }
 
-..infoCardImage--info__card{
-    width: max-content;
-}
-
 .infoCardImageContainer--info__card{
-    width: max-content;
+    width: 100%;
 }
 
 .infoCardCallActionContainer--info__card :global(.vtex-button){

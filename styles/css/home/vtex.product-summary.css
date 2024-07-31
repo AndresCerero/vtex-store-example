@@ -1,0 +1,4 @@
+.element--info__summary :global(.vtex-wish-list){
+     background-color: black;
+     position: absolute;
+}
