@@ -32,8 +32,8 @@
       "add-to-list-btn",
       "product-summary-image",
       "product-summary-name",
-      "product-rating-inline",
-      "product-summary-space",
+      //"product-rating-inline",
+      //"product-summary-space",
       "product-summary-price",
       "product-summary-buy-button"
     ],
@@ -41,6 +41,13 @@
       "blockClass": "info__summary"
     }
   },
+
+  "product-summary-buy-button": {
+    "props": {
+      "buyButtonText": "false"
+    }
+  },
+
 
   "list-context.product-list#demo1": {
     "blocks": ["product-summary.shelf#demo1"],
@@ -71,9 +78,11 @@
   "vtex.product-highlights@2.x:product-highlights": {
     "children": ["product-highlight-text"]
   },
+
   "product-highlight-text": {
     "props": {
       "message": "{highlightName}"
     }
   }
+      
 }

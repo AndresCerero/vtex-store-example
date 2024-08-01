@@ -21,7 +21,7 @@
     "props": {
       "text": "An amazing product.",
       "font": "heading-6",
-      "blockClass":"Tittle_InfoCard"
+      "blockClass": "Tittle_InfoCard"
     }
   },
 
@@ -30,7 +30,7 @@
       "itemsPerPage": {
         "desktop": 3,
         "tablet": 2,
-        "phone": 2
+        "phone": 1
       },
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
@@ -47,8 +47,7 @@
   "flex-layout.col#Info__Card": {
     "title": "Text no one home",
     "children": ["info-card#prueba"],
-    "props": {
-    }
+    "props": {}
   },
 
   "info-card#prueba": {
@@ -61,7 +60,6 @@
       "callToActionText": "Ver precio",
       "callToActionUrl": "/sale/d",
       "blockClass": "info__card",
-      "textAlignment": "center",
       "bodyText": "Builder platform is made by, buildership platform is made by..."
     }
   }

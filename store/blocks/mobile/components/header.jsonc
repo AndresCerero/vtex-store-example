@@ -11,7 +11,7 @@
       "minicart.v2"
     ],
     "props": {
-      "blockClass": "main-header-mobile",
+      //"blockClass": "main-header-mobile",
       "preventHorizontalStretch": true,
       "preserveLayoutOnMobile": true,
       "fullWidth": true

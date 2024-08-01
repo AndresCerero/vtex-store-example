@@ -4,7 +4,7 @@
 }
 
 /*---Nav|Button login--*/
-.flexColChild--button__header  :global(.vtex-button){
+.flexColChild--button__header :global(.vtex-button){
     background-color: rgb(2, 0, 0);
     color: white;
     border-radius: 40px;
@@ -29,7 +29,7 @@
 /*---NavTwo|Collections Departament*/
 
 .flexColChild--collections__departament :global(.vtex-menu-2-x-menuContainer) {
-    min-height: 60px;
+    min-height: 68px;
 }
 
 .flexColChild--collections__departament :global(.vtex-menu-2-x-styledLinkContainer){

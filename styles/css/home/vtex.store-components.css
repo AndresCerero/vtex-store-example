@@ -7,12 +7,58 @@
 
 .infoCardTextContainer--info__card{
     width: max-content;
+    display: flex;
+    text-align: left;
+}
+
+.infoCardHeadline--info__card{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.infoCardHeadline--info__card::after {
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 60px; 
+    background: url('assets/img/Artwork_trailing.png') no-repeat center;
+    background-size: contain;
+    position: absolute;
+    transform: translateX(-50%);
+    right: 0;
+}
+
+.infoCardHeadline--info__card{
+    width: 100%;
 }
 
 .infoCardImageContainer--info__card{
     width: 100%;
 }
 
+.infoCardCallActionContainer--info__card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+}
+
 .infoCardCallActionContainer--info__card :global(.vtex-button){
+    font-size: 12px;
+    font-weight: 400;
     border-radius: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.infoCardCallActionContainer--info__card :global(.vtex-button__label)::after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px; 
+    background: url('assets/img/ArrowBuy.svg') no-repeat center;
+    background-size: contain;
+    margin-left: 6px;
 }

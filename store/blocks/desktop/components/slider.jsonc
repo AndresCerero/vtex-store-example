@@ -27,7 +27,8 @@
         {
           "loading": "eager",
           "image": "assets/img/HeroDesktop2.png",
-          "description": "something something"
+          "description": "something something",
+          "mobileImage": "assets/img/HeroMobile.png"
         }
       ]
     }

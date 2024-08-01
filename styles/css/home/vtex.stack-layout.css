@@ -1,0 +1,22 @@
+/*---|Home|Summary|Stack|---*/
+
+.stackContainer--stack__summary{
+    border-radius: 4px;
+    position: absolute;
+    background-color: #1D2734;
+    z-index: 9;    
+}
+
+.stackItem--stack__summary{
+    padding: 10px;
+    min-height: 44px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.stackItem--stack__summary:empty{
+    display: none;
+}
+
