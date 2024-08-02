@@ -57,8 +57,12 @@
    margin-bottom: 6px;
 }
 
+
+/*-|Trigger|MegaMenu|-*/
+
 .flexRow--h100,
 .flexRowContent--h100{
     height: 100%;
+    position: relative;
 }
 

@@ -19,23 +19,13 @@
         "mega-menu-trigger-btn"
       ]
     },
-
-    /*"flex-layout.row#mega-menu": {
-      "children": ["mega-menu#desktop"]
-    },*/
     
     "mega-menu#desktop": {
       "props": {
-        "openOnly": "horizontal"
+        "openOnly": "horizontal",
+        "blockClass": "desktop__megamenu"
       }
     },
-
-    /*"flex-layout.col#trigger-mega-menu": {
-      "props": {
-        "verticalAlign": "middle"
-      },
-      "children": ["mega-menu-trigger-btn"]
-    },*/
 
     "mega-menu-trigger-btn": {
       "props": {
