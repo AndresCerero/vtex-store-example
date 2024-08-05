@@ -19,3 +19,9 @@
 .slide--carousel__summary{
     margin: 0 10px;
 }
+
+.paginationDotsContainer--carousel__summary{
+    position: absolute;
+    height: 80px;
+    align-items: center;
+}

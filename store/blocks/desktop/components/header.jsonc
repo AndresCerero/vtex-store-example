@@ -42,9 +42,10 @@
     "children": ["login"]
   },
 
-  "login":{
+  "search-bar":{
     "props":{
-      "iconLabel":"Login"
+      "placeholder":"Search products....",
+      "blockClass": "search-bar"
     }
   }
 

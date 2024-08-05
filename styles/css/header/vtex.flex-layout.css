@@ -10,6 +10,10 @@
     border-radius: 40px;
 }
 
+.flexColChild--button__header :global(.vtex-login-2-x-label){
+    padding: 0;
+}
+
 .flexColChild--button__header  :global(.vtex-login-2-x-label){
     color: white;
     text-align: center;
@@ -27,6 +31,11 @@
 }
 
 /*---NavTwo|Collections Departament*/
+
+.flexCol--collections__departament{
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
 
 .flexColChild--collections__departament :global(.vtex-menu-2-x-menuContainer) {
     min-height: 68px;

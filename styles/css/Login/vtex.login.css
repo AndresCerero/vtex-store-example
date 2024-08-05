@@ -1,0 +1,40 @@
+.portalContainer--view__login :global(.vtex-login-2-x-box){
+    position: absolute;
+    top: 73px;
+    right: -102px !important;
+    width: 480px;
+}
+
+.portalContainer--view__login :global(.vtex-login-2-x-contentContainer){
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.portalContainer--view__login :global(.vtex-login-2-x-content){
+    background-color: rgba(245, 244, 246, 1);
+    border-radius: 0 0 8px 8px;
+    padding: 20px;
+}
+
+.portalContainer--view__login :global(.vtex-button){
+    background-color: rgba(245, 244, 246, 1);
+    border: 1px solid rgba(29, 39, 52, 1);
+    border-radius: 40px;
+    padding: 10px;
+    color: rgba(29, 39, 52, 1);
+}
+
+.googleOptionBtn :global(.vtex-button){
+    background: rgba(255, 255, 255, 1);
+    color: rgba(94, 99, 110, 1);
+    border: none;
+}
+
+.facebookOptionBtn :global(.vtex-button){
+    background: rgba(24, 119, 242, 1);
+    color: rgb(255, 255, 255);
+    border: none;
+}
+
+.arrowUp {
+    display: none;
+}
