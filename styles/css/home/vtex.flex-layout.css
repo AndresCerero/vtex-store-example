@@ -16,3 +16,8 @@
 .flexRow--minicart-footer{
     box-shadow: none;
 }
+
+.flexColChild--minicart-col{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,6 @@
+.flexRow--minicard_logo{
+    min-height: 58px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+}

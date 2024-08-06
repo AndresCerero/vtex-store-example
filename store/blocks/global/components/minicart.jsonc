@@ -1,13 +1,21 @@
 {
   "minicart.v2": {
     "props": {
-      "MinicartIcon": "icon-cart#minicart-icon"
+      "MinicartIcon": "icon-cart#minicart-icon"    
     },
-    "children": ["icon-cart#minicart-icon","minicart-base-content"]
+    "children": ["flex-layout.row#minicard_logo","minicart-base-content"]
   },
+  
   "icon-cart#minicart-icon": {
     "props": {
       "size": 24
+    }
+  },
+
+  "flex-layout.row#minicard_logo": {
+    "children": ["logo"],
+    "props": {
+      "blockClass": "minicard_logo"
     }
   },
 
@@ -26,7 +34,10 @@
   },
 
   "flex-layout.col#minicart-footer": {
-    "children": ["minicart-summary", "minicart-checkout-button"]
+    "children": ["minicart-summary", "minicart-checkout-button"],
+    "props": {
+      "blockClass": "minicart-col"
+    }
   },
 
   //Product List
