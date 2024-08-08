@@ -1,3 +1,5 @@
+@import url(./logincustom.css);
+
 .portalContainer--view__login :global(.vtex-login-2-x-box){
     position: absolute;
     top: 73px;
@@ -6,13 +8,14 @@
 }
 
 .portalContainer--view__login :global(.vtex-login-2-x-contentContainer){
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: none;
 }
 
 .portalContainer--view__login :global(.vtex-login-2-x-content){
     background-color: rgba(245, 244, 246, 1);
-    border-radius: 0 0 8px 8px;
+    border-radius: 0 0 16px 16px;
     padding: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .portalContainer--view__login :global(.vtex-button){
@@ -21,6 +24,11 @@
     border-radius: 40px;
     padding: 10px;
     color: rgba(29, 39, 52, 1);
+}
+
+.portalContainer--view__login :global(.vtex-login-2-x-contentForm){
+    min-width: 100%;
+    position: relative;
 }
 
 .googleOptionBtn :global(.vtex-button){
@@ -36,5 +44,65 @@
 }
 
 .arrowUp {
+    display: none;
+}
+
+
+/*--Access Code--*/
+
+.portalContainer--view__login :global(.vtex-input-prefix__group){
+    border: 1px solid rgba(29, 39, 52, 1);
+    border-radius: 40px;
+    padding: 10px;
+    min-height: 44px;
+}
+
+.portalContainer--view__login :global(.vtex-styleguide-9-x-hideDecorators){
+    background: transparent;
+
+}
+
+.portalContainer--view__login :global(.pa2){
+ display: none;
+}
+
+.formFooter{
+    border: none;
+    display: block;
+}
+
+.backButton {
+    position: absolute;
+    z-index: 69;
+    top: 0;
+    min-height: 58px;
+    display: flex;
+    align-items: center;
+}
+
+.backButton :global(.vtex-button){
+    border: none;
+}
+
+.backButton :global(.t-small){
+    display: none;
+}
+
+.sendButton{
+    min-width: 100%;
+}
+
+.sendButton :global(.vtex-button){
+    min-width: 100%;
+    color: white;
+    background-color: #1D2734;
+}
+/*---|Login|E-mail and password|*/
+
+.emailAndPasswordForm :global(.vtex-login-2-x-formLinkContainer){
+    justify-content: center;
+}
+
+.emailAndPasswordForm :global(.vtex-input__suffix){
     display: none;
 }

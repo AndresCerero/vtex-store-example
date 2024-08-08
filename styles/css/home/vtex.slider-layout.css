@@ -1,3 +1,5 @@
+@import url(./slidercustom.css);
+
 /*---|Home|Slider|InfoCard|--*/
 
 .sliderLayoutContainer--Carousel__InfoCard{
@@ -14,42 +16,31 @@
     width: 44px !important;
     height: 40px !important;
     border-radius: 0;
-    background-color: green;
     position: relative;
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 2px;
 }
-.paginationDot--Carousel__InfoCard::before {
-    /*width: 44px;*/
-    /*height: 2px;*/
-    content: "←";
-    font-size: 0;
-    position: absolute;
-    background-color: #26599b;
-}
 
-.paginationDot--Carousel__InfoCard--isActive::after {
-    /*width: 16px;*/
-    /*height: 16px;*/
-    content: "→";
-    position: absolute;
-    right: -8px;
-    background-color: #a13b3b;
-    border-radius: 50%;
-}
-
-/*
-.paginationDot--Carousel__InfoCard--isActive ~ .paginationDot--Carousel__InfoCard::before {
+.paginationDot--Carousel__InfoCard::after {
     width: 44px;
     height: 2px;
-    content: "←";
-    font-size: 0;
-    background-color: #a8cdd6;
+    content: "";
     position: absolute;
+    background-color: #1D2734;
 }
-*/
+
+.paginationDot--Carousel__InfoCard--isActive::before {
+    width: 16px;
+    height: 16px;
+    content: "";
+    position: absolute;
+    right: -8px;
+    background-color: #1D2734;
+    border-radius: 50%;
+}
 
 /*--|Home|Slider|Summary|--*/
 
@@ -67,45 +58,33 @@
     align-items: center;
 }
 
-/*
 
-.vtex-slider-layout-0-x-paginationDot--isActive:before {
-    content: "";
-    position: absolute;
-    right: -8px;
-    width: 16px;
-    height: 16px;
-    background-color: #1d2734;
-    border-radius: 50%;
-}
-
-.vtex-slider-layout-0-x-paginationDot {
+.paginationDot--carousel__summary {
     width: 44px !important;
     height: 40px !important;
     border-radius: 0;
-    background-color: transparent;
     position: relative;
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 2px;
 }
 
-.vtex-slider-layout-0-x-paginationDot:after {
+.paginationDot--carousel__summary::after {
     width: 44px;
     height: 2px;
     content: "";
-    font-size: 0;
-    background-color: #1d2734;
     position: absolute;
+    background-color: #1D2734;
 }
 
-.vtex-slider-layout-0-x-paginationDot--isActive~.vtex-slider-layout-0-x-paginationDot:after {
-    width: 44px;
-    height: 2px;
+.paginationDot--carousel__summary--isActive::before {
+    width: 16px;
+    height: 16px;
     content: "";
-    font-size: 0;
-    background-color: rgba(29, 39, 52, .4);
     position: absolute;
+    right: -8px;
+    background-color: #1D2734;
+    border-radius: 50%;
 }
-*/    

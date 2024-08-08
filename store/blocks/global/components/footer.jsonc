@@ -10,7 +10,7 @@
   },
   "image": {
     "props": {
-      "width": 100,
+      "width": 160,
       "src": "assets/img/logowhite.svg"
     }
   }

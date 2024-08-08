@@ -1,14 +1,25 @@
+/*--Container*/
+.opened{
+    display: flex;
+    justify-content: center;
+    max-height: 100vh;
+}
+
 /*--Header---*/
+
 .closeIconContainer{
     position: absolute;
     right: 18px;
 }
 
-.minicard_logo{
-    min-height: 58px;
-    background-color: #77bd1b;
+/*--ProductList--*/
+
+.drawerContent{
     display: flex;
-    align-items: center;
+}
+
+.drawerStyles{
+    max-height: 90%;
 }
 
 /*Summary*/
@@ -25,6 +36,7 @@
     width: 90%;
     padding: 0;
 }
+
 .minicartCheckoutButton--minicart-button :global(.vtex-button){
     width: 100%;
     border-radius: 40px;
