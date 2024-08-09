@@ -1,11 +1,11 @@
 {
   "minicart.v2": {
     "props": {
-      "MinicartIcon": "icon-cart#minicart-icon"    
+      "MinicartIcon": "icon-cart#minicart-icon"
     },
-    "children": ["flex-layout.row#minicard_logo","minicart-base-content"]
+    "children": ["flex-layout.row#minicard_logo", "minicart-base-content"]
   },
-  
+
   "icon-cart#minicart-icon": {
     "props": {
       "size": 24
@@ -22,26 +22,42 @@
   //Base Content
   "minicart-base-content": {
     "blocks": ["minicart-empty-state"],
-    "children": ["minicart-product-list", "flex-layout.row#minicart-footer"]
+    "children": ["flex-layout.col#minicart-container"]
   },
 
-  //|MiniCard|Footer|
-  "flex-layout.row#minicart-footer": {
+  "flex-layout.col#minicart-container": {
     "props": {
-      "blockClass": "minicart-footer"
+      "blockClass": "minicart--container"
     },
-    "children": ["flex-layout.col#minicart-footer"]
+    "children": ["flex-layout.row#product--list","flex-layout.row#minicart-footer"]
   },
+  
+  //|MiniCard|Footer|
 
-  "flex-layout.col#minicart-footer": {
-    "children": ["minicart-summary", "minicart-checkout-button"],
+  "flex-layout.row#minicart-footer": {
+    "children": ["flex-layout.col#minicart-footer"],
     "props": {
-      "blockClass": "minicart-col"
+      "blockClass": "minicart--footer"
+    }
+  },
+  
+  "flex-layout.col#minicart-footer": {
+    "children": ["minicart-summary#minicard", "minicart-checkout-button"],
+    "props": {
+      "blockClass": "minicart--row"
     }
   },
 
   //Product List
-    
+  "flex-layout.row#product--list": {
+    "props": {
+      "blockClass": "product--list"
+    },
+    "children": [
+      "minicart-product-list"    
+    ]
+  },
+
   "minicart-product-list": {
     "blocks": ["product-list#minicart"]
   },
@@ -53,44 +69,47 @@
   //Button
   "minicart-checkout-button": {
     "props": {
-      "finishShoppingButtonLink": "/checkout/#/orderform",
+      "finishShoppingButtonLink": "/checkout/#/",
       "blockClass": "minicart-button"
     }
   },
 
   //Summary
-  "minicart-summary": {
+  "minicart-summary#minicard": {
     "blocks": ["checkout-summary.compact#minicart"],
-    "props" : {
+    "props": {
       "blockClass": "minicart-summary"
     }
   },
 
   "checkout-summary.compact#minicart": {
     "children": ["summary-totalizers#minicart"],
-    "props": {
-      "totalizersToShow": [
-        "Items", 
-        "Discounts"
-        //"Shipping"
-      ]
+    "props":{
+      "totalizersToShow": ["Items"]
     }
   },
 
   "summary-totalizers#minicart": {
     "props": {
-      "showOriginalTotal": true,
-      "showTotal": true
+      "showTotal": true,
+      "showDeliveryTotal": false,
+      "showOriginalTotal": true
     }
   },
 
   //Empty
   "minicart-empty-state": {
-    "children": ["flex-layout.row#empty-state"]
+    "children": ["flex-layout.row#empty-state"],
+    "props":{
+      "blockClass":"minicard--empty"
+    }
   },
 
   "flex-layout.row#empty-state": {
-    "children": ["flex-layout.col#empty-state"]
+    "children": ["flex-layout.col#empty-state"],
+    "props": {
+      "blockClass": "row--minicard__empty"
+    }
   },
 
   "flex-layout.col#empty-state": {
@@ -103,7 +122,8 @@
     "props": {
       "horizontalAlign": "center",
       "verticalAlign": "middle",
-      "rowGap": 5
+      "rowGap": 5,
+      "blockClass":"col--minicard__empty"
     }
   },
 

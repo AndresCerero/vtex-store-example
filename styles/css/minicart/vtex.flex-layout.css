@@ -1,6 +1,47 @@
 .flexRow--minicard_logo{
-    min-height: 58px;
+    min-height:  6%;
     background-color: #ffffff;
     display: flex;
     align-items: center;
+}
+
+.flexCol--minicart--container{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-height: 94%;
+}
+
+.flexColChild--minicart--container{
+    margin: 10px 0px;
+    overflow: auto;
+}
+
+.flexColChild--minicart--container:first-child {
+    scrollbar-color: #BEBEBE #F2F2F2;
+    scrollbar-width: thin;
+    padding: 0;
+    min-height: 70%;
+    margin: 10px 0px;
+    overflow: auto;
+}
+
+.flexCol--col--minicard__empty {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.flexColChild--col--minicard__empty{
+    width: 100%;
+}
+
+.flexRow--minicart-footer{
+    box-shadow: none;
+}
+
+.flexColChild--minicart-col{
+    display: flex;
+    justify-content: center;
 }

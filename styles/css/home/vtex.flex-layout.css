@@ -9,15 +9,3 @@
 .flexRow--home__summary{
     background-color: #f5f4f6 ;
 }
-
-/*---|Minicar|*/
-
-
-.flexRow--minicart-footer{
-    box-shadow: none;
-}
-
-.flexColChild--minicart-col{
-    display: flex;
-    justify-content: center;
-}
