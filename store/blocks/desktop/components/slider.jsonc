@@ -8,15 +8,6 @@
     }
   },
 
-  /*
-  "flex-layout.col#text__zoneslider": {
-    "title": "Text col one home",
-    "children": ["list-context.image-list#slider"],
-    "props": {
-      "width":"100%"
-    }
-  },*/
-
   /*---Slider---*/
   "list-context.image-list#slider": {
     "children": ["slider-layout#demo-images"],

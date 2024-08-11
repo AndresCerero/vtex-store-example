@@ -12,6 +12,7 @@
 .closeIconContainer{
     position: absolute;
     right: 18px;
+    top: 40px;
 }
 
 /*--ProductList--*/
@@ -27,6 +28,7 @@
 
 .minicartProductListContainer{
     margin: 20px 0px;
+    
     scrollbar-color: #BEBEBE #F2F2F2;
     scrollbar-width: thin;
     padding: 0;

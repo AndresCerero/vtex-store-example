@@ -33,6 +33,7 @@
       "product-summary-image",
       "product-summary-name",
       "product-summary-price",
+      "vtex.product-highlights@2.x:product-highlights#free_delivery",
       "product-summary-buy-button"
     ],
     "props": {
@@ -42,10 +43,10 @@
 
   "product-summary-buy-button": {
     "props": {
-      "buyButtonText": "false"
+      "blockClass": "button_buy",
+      "buyButtonText": "Comprar"
     }
   },
-
 
   "list-context.product-list#demo1": {
     "blocks": ["product-summary.shelf#demo1"],
@@ -66,21 +67,56 @@
   },
 
   "stack-layout#summary__stack": {
-    "children": ["vtex.product-highlights@2.x:product-highlights"],
+    "children": ["vtex.product-highlights@2.x:product-highlights#offer__sale"],
     "props": {
       "zIndexOffset": 9,
-      "blockClass":"stack__summary"
+      "blockClass": "stack__summary"
     }
   },
 
-  "vtex.product-highlights@2.x:product-highlights": {
-    "children": ["product-highlight-text"]
+  "vtex.product-highlights@2.x:product-highlights#offer__sale": {
+    "children": ["product-highlight-text#offer__sale"],
+    "props":{
+      "filter": {
+        "type": "show",
+        "highlightNames": ["20% OFF"]
+      }
+    }
   },
 
-  "product-highlight-text": {
+  "product-highlight-text#offer__sale": {
     "props": {
-      "message": "{highlightName}"
+      "message": "{highlightName}",
+      "blockClass": "20%off"
+    }
+  },
+
+
+  "vtex.product-highlights@2.x:product-highlights#free_delivery" : {
+    "children": ["product-highlight-wrapper##free_delivery"],
+    "props":{
+      "filter": {
+        "type": "show",
+        "highlightNames": ["Envío Gratis"],
+        "blockClass": "highlight--free__delivery"
+      }
+    }
+  },
+
+  "product-highlight-wrapper##free_delivery": {
+    "children": [
+      "product-highlight-text#free_delivery",
+      "icon-star"
+    ],
+    "props":{
+      "blockClass": "wrapper--free__delivery"
+    }
+  },
+
+  "product-highlight-text#free_delivery": {
+    "props": {
+      "message": "{highlightName}",
+      "blockClass": "free_delivery"
     }
   }
-      
 }
