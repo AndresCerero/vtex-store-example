@@ -1,0 +1,9 @@
+.flexCol--head__two{
+    display: flex;
+    align-items: center;
+}
+
+.flexCol--filter__plp{
+    min-width: max-content;
+    margin: 0 4rem 0 0;
+}
