@@ -1,0 +1,15 @@
+.galleryTitle--layout{
+    margin: 0;
+    padding: 1rem 0;
+}
+
+.totalProducts--layout{
+    padding: 0;
+    text-align: left;
+    padding-bottom: 2rem;
+}
+
+.galleryLayoutSwitcher{
+    display: flex;
+    justify-content: flex-end;
+}
