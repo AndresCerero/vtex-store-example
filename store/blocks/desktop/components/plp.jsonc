@@ -55,7 +55,8 @@
     "children": [
       "gallery-layout-switcher",
       "search-content#plp",
-      "search-products-count-per-page"
+      "search-products-count-per-page",
+      "search-fetch-more"
     ],
     "props": {
       "blockClass": "gallery__plp"
@@ -75,5 +76,10 @@
       "gallery-layout-option#two",
       "gallery-layout-option#many"
     ]
+  },  
+  "search-fetch-more": {
+    "props": {
+      "blockClass": ""
+    }
   }
 }
