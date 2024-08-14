@@ -1,22 +1,57 @@
 {
   "flex-layout.row#view--pdp": {
-    "props": {},
-    "children": ["flex-layout.col#view-pdp"]
+    "props": {
+      "blockClass": ["view__pdp"]
+    },
+    "children": [
+      "flex-layout.col#pdp-container"
+    ]
   },
 
-  "flex-layout.col#view-pdp": {
-    "props": {},
+  "flex-layout.col#pdp-container": {
+    "props": {
+      "blockClass":["pdp-container"]
+    },
+    "children": ["flex-layout.row#view--pdp__top","flex-layout.row#view--pdp__bottom"]
+  },
+
+  "flex-layout.row#view--pdp__top": {
+    "props": {
+      "blockClass": ["view--pdp__top"],
+      "width": "grow"
+    },
+    "children": ["flex-layout.col#pdp--top__left","flex-layout.col#pdp--top__right"]
+  },
+
+  "flex-layout.col#pdp--top__left": {
+    "props": {
+      "blockClass": "pdp--top__left"
+    },
+    "children": ["product-images"]
+  },
+
+  "flex-layout.col#pdp--top__right": {
+    "props": {
+      "blockClass": "pdp--top__right",
+      "preventVerticalStretch": true
+    },
     "children": [
-      "product-images",
+      "vtex.product-highlights@2.x:product-highlights#pdp",
       "vtex.store-components:product-name",
       "product-selling-price",
       "product-sku-attributes",
       "sku-selector",
       "product-quantity",
       "add-to-cart-button",
-      "share",
-      "product-specification-group"
+      "share"
     ]
+  },
+
+  "flex-layout.row#view--pdp__bottom": {
+    "props": {
+      "blockClass": ["view--pdp__bottom"]
+    },
+    "children": ["product-specification-group"]
   },
 
   //--------Name------
@@ -26,32 +61,68 @@
       "showBrandName": true
     }
   },
-  //------Specification-------
+  //------Group Specification-------
   "product-specification-group": {
-    "children": ["product-specification-text#group", "product-specification"]
+    "children": ["product-specification-text#group", "flex-layout.row#product__specification"],
+    "props": {
+      "blockClass": "specification__group"
+    }
   },
+  "product-specification-text#group": {
+    "props": {
+      "message": "{groupName}",
+      "blockClass": "group__name"
+    }
+  },
+
+  "flex-layout.row#product__specification": {
+    "props": {
+      "blockClass": "product__specification"
+    },
+    "children": ["product-specification"]
+  },
+
+  //----Specification-----
   "product-specification": {
     "children": [
       "product-specification-text#specification",
       "product-specification-values"
-    ]
-  },
-  "product-specification-values": {
-    "children": ["product-specification-text#value"]
-  },
-  "product-specification-text#group": {
+    ],
     "props": {
-      "message": "{groupName}"
+      "blockClass": "product__specification"
     }
   },
+  //----Text Specification
   "product-specification-text#specification": {
     "props": {
-      "message": "{specificationName}"
+      "message": "{specificationName}",
+      "blockClass": "specification__name"
     }
   },
+
+  //----Values----
+  "product-specification-values": {
+    "children": ["product-specification-text#value"],
+    "props": {
+      "blockClass": "specification__values"
+    }
+  },
+  //---Text Values ---
   "product-specification-text#value": {
     "props": {
-      "message": "{specificationValue}"
+      "message": "{specificationValue}",
+      "blockClass": "specification__value"
+    }
+  },
+
+  //---Higlights---
+  "vtex.product-highlights@2.x:product-highlights#pdp": {
+    "children": ["product-highlight-text"]
+  },
+  "product-highlight-text": {
+    "props": {
+      "message": "{highlightName}",
+      "blockClass": "pdp__highlight"
     }
   }
 }
