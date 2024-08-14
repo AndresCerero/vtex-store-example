@@ -1,0 +1,40 @@
+@import url(./specificationscustom.css);
+
+.flexRow--view--pdp__top {
+  margin-top: 4rem;
+}
+
+.flexRow--view--pdp__bottom {
+  margin-bottom: 4rem;
+}
+
+.flexRowContent--view--pdp__bottom .stretchChildrenWidth {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexRowContent--product__specification .stretchChildrenWidth {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+.flexColChild--pdp--top__right{
+    display: flex;
+    padding: 6px 0;
+}
+
+.flexColChild--pdp--top__right:empty{
+    display: none;
+}
+
+.flexColChild--pdp--top__right .productSKUAttributesContainer:empty{
+    display: none;
+}
+
+.flexColChild--pdp--top__right
+  :global(.vtex-product-highlights-2-x-productHighlightText--pdp__highlight) {
+  padding: 1rem;
+  background: #ff832433;
+  border-radius: 6px;
+  margin-right: 6px;
+}

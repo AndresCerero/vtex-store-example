@@ -1,7 +1,7 @@
 {
   "store.product": {
     "children": [
-       "add-to-list-btn"
+       "flex-layout.row#view--pdp"
     ]
   }
 }

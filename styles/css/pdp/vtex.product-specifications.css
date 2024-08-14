@@ -1,0 +1,16 @@
+.groupName--group__name{
+  box-sizing: border-box;
+  padding: 1rem 0rem;
+}
+
+.specificationName--specification__name {
+  box-sizing: border-box;
+  padding: 1rem;
+  grid-column: 1;
+}
+
+.specificationValue--specification__value {
+  box-sizing: border-box;
+  padding: 1rem;
+  grid-column: 2;
+}
