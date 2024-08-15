@@ -1,0 +1,67 @@
+.quantitySelectorContainer {
+  box-sizing: border-box;
+  margin-bottom: 0;
+  height: 100%;
+  padding-right: 1rem;
+}
+
+.quantitySelectorStepper {
+  height: 100%;
+}
+
+.quantitySelectorContainer :global(.vtex-numeric-stepper-wrapper),
+.quantitySelectorContainer :global(.vtex-numeric-stepper-container),
+.quantitySelectorContainer :global(.vtex-numeric-stepper__minus-button-container),
+.quantitySelectorContainer :global(.vtex-numeric-stepper__minus-button),
+.quantitySelectorContainer :global(.vtex-numeric-stepper__plus-button-container),
+.quantitySelectorContainer :global(.vtex-numeric-stepper__plus-button),
+.quantitySelectorContainer :global(.vtex-numeric-stepper__input) {
+  height: 100%;
+}
+
+.quantitySelectorContainer :global(.vtex-numeric-stepper-container) {
+  display: flex;
+  width: 100%;
+}
+
+.quantitySelectorContainer :global(.vtex-numeric-stepper__input) {
+    flex-grow: 2;
+}
+
+.quantitySelectorContainer :global(.vtex-numeric-stepper__minus-button-container) {
+  flex-grow: 1;
+}
+.quantitySelectorContainer :global(.vtex-numeric-stepper__plus-button-container) {
+  flex-grow: 1;
+}
+
+
+.quantitySelectorContainer :global(.vtex-numeric-stepper__minus-button){
+    background-color: #1D2734;
+    font-size: 26px;
+    color: white;
+    border: none;
+    display: flex;
+    width: 100% !important;
+}
+.quantitySelectorContainer :global(.vtex-numeric-stepper__plus-button){
+    background-color: #1D2734;
+    font-size: 26px;
+    color: white;
+    border: none;
+    display: flex;
+    width: 100% !important;
+}
+.quantitySelectorContainer :global(.vtex-numeric-stepper__input){
+    box-sizing: border-box;
+    border: none;
+    border-top: 1px solid #E7E7E7;
+    border-bottom: 1px solid #E7E7E7;
+    display: flex;
+}
+/*
+vtex-numeric-stepper-wrapper
+vtex-numeric-stepper-container
+vtex-numeric-stepper__minus-button-container
+vtex-numeric-stepper__minus-button
+*/
