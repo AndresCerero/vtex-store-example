@@ -4,12 +4,16 @@
     border-radius: 4px;
     position: absolute;
     background-color: #1D2734;
-    z-index: 9;    
+    z-index: 9;
+    display: flex;
+    width: 40%;  
+    justify-content: center;
+    align-items: center;
 }
 
 .stackItem--stack__summary{
-    padding: 10px;
-    min-height: 44px;
+    padding: 6%;
+    min-height: 40px;
     color: white;
     align-items: center;
     justify-content: center;

@@ -32,19 +32,20 @@
       "add-to-list-btn",
       "product-summary-image",
       "product-summary-name",
-      "product-summary-price",
+      "product-list-price",
+      "product-selling-price",
       "vtex.product-highlights@2.x:product-highlights#free_delivery",
-      "product-summary-buy-button"
+      "add-to-cart-button#summary"
     ],
     "props": {
       "blockClass": "info__summary"
     }
   },
 
-  "product-summary-buy-button": {
+  "add-to-cart-button#summary": {
     "props": {
       "blockClass": "button_buy",
-      "buyButtonText": "Comprar"
+      "text": "Comprar"
     }
   },
 
