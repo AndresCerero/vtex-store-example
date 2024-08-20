@@ -29,22 +29,30 @@
   "product-summary.shelf#demo1": {
     "children": [
       "stack-layout#summary__stack",
-      "add-to-list-btn",
+      "add-to-list-btn#Summary_wish--button",
       "product-summary-image",
       "product-summary-name",
-      "product-summary-price",
+      "product-list-price",
+      "product-selling-price",
       "vtex.product-highlights@2.x:product-highlights#free_delivery",
-      "product-summary-buy-button"
+      "add-to-cart-button#summary"
     ],
     "props": {
       "blockClass": "info__summary"
     }
   },
 
-  "product-summary-buy-button": {
+  "add-to-list-btn#Summary_wish--button": {
+    "props": {
+      "toastURL": "/wishlist",
+      "blockClass":"Summary_wish--button"
+    }
+  },
+
+  "add-to-cart-button#summary": {
     "props": {
       "blockClass": "button_buy",
-      "buyButtonText": "Comprar"
+      "text": "Comprar"
     }
   },
 
