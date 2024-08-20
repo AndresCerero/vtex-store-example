@@ -1,16 +1,19 @@
 {
   /*----*/
 
-  "flex-layout.col#header-menu": {
+  "flex-layout.col#desktop__header--firstmenu": {
     "props": {
       "horizontalAlign":"center",
       "verticalAlign":"middle",
-      "blockClass":"header__menu"
+      "blockClass":"desktop__header--firstmenu"
     },
-    "children": ["vtex.menu@2.x:menu#websites"]
+    "children": ["vtex.menu@2.x:menu#header__firstmenu"]
   },
 
-  "vtex.menu@2.x:menu#websites": {
+  "vtex.menu@2.x:menu#header__firstmenu": {
+    "props": {
+      "blockClass": ["header__firstmenu"]
+    },
     "children": [
       "menu-item#gap__one",
       "menu-item#gap__two",

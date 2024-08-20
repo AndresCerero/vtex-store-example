@@ -1,7 +1,7 @@
 {
-  "login": {
+  "login#global__header--login": {
     "props": {
-      "iconLabel": "Login",
+      "iconLabel": "Login", 
       "optionsTitle": "LOG IN",
       "emailPlaceholder":"Enter your e-mail",
       "passwordPlaceholder":"Enter your password",
@@ -11,7 +11,8 @@
       //E-mail and password
       "providerPasswordButtonLabel": "password",
       "emailAndPasswordTitle": "Continue with e-mail and password",
-      "blockClass": "view__login"
+      "blockClass": "view__login",
+      "labelClasses": "login__icon"
     }
   }
 }

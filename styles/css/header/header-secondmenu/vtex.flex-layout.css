@@ -1,0 +1,8 @@
+.flexRowContent--global__header__secondmenu{
+    max-width: 1140px;
+}
+
+.flexCol--header__secondmenu{
+    overflow-x: scroll;
+    scrollbar-width: none;
+}

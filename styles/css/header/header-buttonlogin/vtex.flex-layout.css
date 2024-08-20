@@ -1,0 +1,13 @@
+/*---Nav|Button login--*/
+
+.flexColChild--desktop__header--buttonlogin :global(.vtex-button){
+    background-color: rgb(2, 0, 0);
+    color: white;
+    border-radius: 40px;
+}
+
+.flexColChild--desktop__header--buttonlogin :global(.vtex-login-2-x-label){
+    text-transform: capitalize;
+    padding-left: 0;
+    font-weight: 400;
+}

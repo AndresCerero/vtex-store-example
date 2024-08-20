@@ -1,16 +1,8 @@
-/*---Nav| Search --*/
+/*---Nav---*/
 
-.searchBarInnerContainer--search-bar :global(.vtex-input-prefix__group){
-    border: none;
-    background: rgba(245, 244, 246, 1);
-    border-radius: 20px;
+.container{
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
-.searchBarInnerContainer--search-bar :global(.vtex-styleguide-9-x-input){
-    background: rgba(245, 244, 246, 1);
-    
-}
-
-.searchBarInnerContainer--search-bar :global(.vtex-input__suffix){
-    background: rgba(245, 244, 246, 1);
-}

@@ -1,0 +1,15 @@
+/*---NavOne|Tendencias IT Globers--*/
+
+.menuContainer--header__firstmenu .styledLink{
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.menuContainer--header__firstmenu .styledLink:hover{
+    text-decoration: underline;
+}
+
+.menuContainer--header__firstmenu .styledLinkContainer{
+    margin: 0;
+    padding: 0.46rem;
+}

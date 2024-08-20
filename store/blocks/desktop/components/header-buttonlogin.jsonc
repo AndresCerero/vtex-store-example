@@ -1,0 +1,9 @@
+{
+  "flex-layout.col#desktop__header--buttonlogin": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "desktop__header--buttonlogin"
+    },
+    "children": ["login#global__header--login"]
+  }
+}

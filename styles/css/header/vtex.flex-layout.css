@@ -1,71 +1,7 @@
 /*---NavSticky---*/
-.flexRow--desktop__header{
-    background-color: rgb(255, 255, 255);
+.flexRow--desktop__row--header{
+    max-width: 1140px;
 }
-
-/*---Nav|Button login--*/
-.flexColChild--button__header :global(.vtex-button){
-    background-color: rgb(2, 0, 0);
-    color: white;
-    border-radius: 40px;
-}
-
-.flexColChild--button__header :global(.vtex-login-2-x-label){
-    padding: 0;
-}
-
-.flexColChild--button__header  :global(.vtex-login-2-x-label){
-    color: white;
-    text-align: center;
-}
-
-/*---NavOne|Tendencias IT Globers--*/
-
-.flexColChild--header__menu :global(.vtex-menu-2-x-styledLinkContainer){
-    font-weight: 400;
-    font-size: 2px;
-}
-
-.flexColChild--header__menu :global(.vtex-menu-2-x-styledLinkContainer):hover{
-    text-decoration: underline;
-}
-
-/*---NavTwo|Collections Departament*/
-
-.flexCol--collections__departament{
-    overflow-x: scroll;
-    scrollbar-width: none;
-}
-
-.flexColChild--collections__departament :global(.vtex-menu-2-x-menuContainer) {
-    min-height: 68px;
-}
-
-.flexColChild--collections__departament :global(.vtex-menu-2-x-styledLinkContainer){
-    padding: 0px;
-}
-
-.flexColChild--collections__departament :global(.vtex-menu-2-x-menuItem){
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.flexColChild--collections__departament :global(.vtex-menu-2-x-menuItem):hover{
-    border-bottom: 2px solid black;
-}
-
-.flexColChild--collections__departament :global(.vtex-menu-2-x-styledLinkContent){
-    flex-direction: column;
-    font-size: 12px;
-    font-weight:300;
-    text-align: center;
-}
-
-.flexColChild--collections__departament :global(.vtex-menu-2-x-styledLinkIcon){
-   margin-bottom: 6px;
-}
-
 
 /*-|Trigger|MegaMenu|-*/
 

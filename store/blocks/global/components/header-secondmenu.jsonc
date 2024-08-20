@@ -1,37 +1,42 @@
 {
   /*----*/
-  "flex-layout.row#home__menudestacado": {
-    "title": "Text no one home",
-    "children": ["flex-layout.col#home__menudestacado"],
-    "props": {}
-  },
-  "flex-layout.col#home__menudestacado": {
-    "title": "Text col one home",
-    "children": ["vtex.menu@2.x:menu#global__menudestacados"],
+  "flex-layout.row#global__header__secondmenu": { 
+    "title": "Menu destacado", 
+    "children": ["flex-layout.col#header__secondmenu"],
     "props": {
-      "blockClass":"collections__departament"
+      "blockClass": "global__header__secondmenu"
+    }
+  },
+  "flex-layout.col#header__secondmenu": {
+    "title": "Text col one home",
+    "children": ["vtex.menu@2.x:menu#header__secondmenu--items"],
+    "props": {
+      "blockClass":"header__secondmenu"
     }
   },
 
-  "vtex.menu@2.x:menu#global__menudestacados": {
+  "vtex.menu@2.x:menu#header__secondmenu--items": {
+    "props": {
+      "blockClass": ["header__secondmenu--items"]
+    },
     "children": [
-      "menu-item#menudestacados__gap--one",
-      "menu-item#menudestacados__gap--two",
-      "menu-item#menudestacados__gap--three",
-      "menu-item#menudestacados__gap--four",
-      "menu-item#menudestacados__gap--five",
-      "menu-item#menudestacados__gap--six",
-      "menu-item#menudestacados__gap--seven",
-      "menu-item#menudestacados__gap--eight",
-      "menu-item#menudestacados__gap--nine",
-      "menu-item#menudestacados__gap--ten",
-      "menu-item#menudestacados__gap--eleven",
-      "menu-item#menudestacados__gap--twelve",
-      "menu-item#menudestacados__gap--thirteen"
+      "menu-item#secondmenu__item--one",
+      "menu-item#secondmenu__item--two",
+      "menu-item#secondmenu__item--three",
+      "menu-item#secondmenu__item--four",
+      "menu-item#secondmenu__item--five",
+      "menu-item#secondmenu__item--six",
+      "menu-item#secondmenu__item--seven",
+      "menu-item#secondmenu__item--eight",
+      "menu-item#secondmenu__item--nine",
+      "menu-item#secondmenu__item--ten",
+      "menu-item#secondmenu__item--eleven",
+      "menu-item#secondmenu__item--twelve",
+      "menu-item#secondmenu__item--thirteen"
     ]
   },
 
-  "menu-item#menudestacados__gap--one": {
+  "menu-item#secondmenu__item--one": {
     "props": {
       "id": "menu-item-shop",
       "type": "custom",
@@ -52,7 +57,7 @@
       }
     }
   },
-  "menu-item#menudestacados__gap--two": {
+  "menu-item#secondmenu__item--two": {
     "props": {
       "id": "menu-item-shop",
       "type": "custom",
@@ -73,7 +78,7 @@
       }
     }
   },
-  "menu-item#menudestacados__gap--three": {
+  "menu-item#secondmenu__item--three": {
     "props": {
       "id": "menu-item-shop",
       "type": "custom",
@@ -94,7 +99,7 @@
       }
     }
   },
-  "menu-item#menudestacados__gap--four": {
+  "menu-item#secondmenu__item--four": {
     "props": {
       "id": "menu-item-shop",
       "type": "custom",
@@ -115,7 +120,7 @@
       }
     }
   },
-  "menu-item#menudestacados__gap--five": {
+  "menu-item#secondmenu__item--five": {
     "props": {
       "id": "menu-item-shop",
       "type": "custom",
@@ -136,7 +141,7 @@
       }
     }
   },
-  "menu-item#menudestacados__gap--six": {
+  "menu-item#secondmenu__item--six": {
     "props": {
       "id": "menu-item-shop",
       "type": "custom",
@@ -157,7 +162,7 @@
       }
     }
   },
-  "menu-item#menudestacados__gap--seven": {
+  "menu-item#secondmenu__item--seven": {
     "props": {
       "id": "menu-item-shop",
       "type": "custom",
@@ -178,7 +183,7 @@
       }
     }
   },
-  "menu-item#menudestacados__gap--eight": {
+  "menu-item#secondmenu__item--eight": {
     "props": {
       "id": "menu-item-shop",
       "type": "custom",
@@ -199,7 +204,7 @@
       }
     }
   },
-  "menu-item#menudestacados__gap--nine": {
+  "menu-item#secondmenu__item--nine": {
     "props": {
       "id": "menu-item-shop",
       "type": "custom",
@@ -220,7 +225,7 @@
       }
     }
   },
-  "menu-item#menudestacados__gap--ten": {
+  "menu-item#secondmenu__item--ten": {
     "props": {
       "id": "menu-item-shop",
       "type": "custom",
@@ -241,7 +246,7 @@
       }
     }
   },
-  "menu-item#menudestacados__gap--eleven": {
+  "menu-item#secondmenu__item--eleven": {
     "props": {
       "id": "menu-item-shop",
       "type": "custom",
@@ -262,7 +267,7 @@
       }
     }
   },
-  "menu-item#menudestacados__gap--twelve": {
+  "menu-item#secondmenu__item--twelve": {
     "props": {
       "id": "menu-item-shop",
       "type": "custom",
@@ -283,7 +288,7 @@
       }
     }
   },
-  "menu-item#menudestacados__gap--thirteen": {
+  "menu-item#secondmenu__item--thirteen": {
     "props": {
       "id": "menu-item-shop",
       "type": "custom",
