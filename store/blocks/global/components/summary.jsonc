@@ -29,7 +29,7 @@
   "product-summary.shelf#demo1": {
     "children": [
       "stack-layout#summary__stack",
-      "add-to-list-btn",
+      "add-to-list-btn#Summary_wish--button",
       "product-summary-image",
       "product-summary-name",
       "product-list-price",
@@ -39,6 +39,13 @@
     ],
     "props": {
       "blockClass": "info__summary"
+    }
+  },
+
+  "add-to-list-btn#Summary_wish--button": {
+    "props": {
+      "toastURL": "/wishlist",
+      "blockClass":"Summary_wish--button"
     }
   },
 
