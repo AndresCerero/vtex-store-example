@@ -1,0 +1,54 @@
+{
+  "flex-layout.col#mobile__header--megamenu": {
+    "children": ["drawer#mobile__megamenu"],
+    "props": {
+      "blockClass": ["mobile__header--megamenu"]
+    }
+  },
+  
+  "drawer#mobile__megamenu": {
+    "children": ["mega-menu#mobile__megamenu"],
+    "blocks": ["drawer-header#mobile__megamenu--drawer"]
+  },
+  "mega-menu#mobile__megamenu": {
+    "props": {
+      "defaultDepartmentActive": "...",
+      "orientation": "vertical",
+      "openOnly": "vertical"
+    }
+  },
+  "drawer-header#mobile__megamenu--drawer": {
+    "children": ["flex-layout.row#megamenu__drawer--top"]
+  },
+  
+  "flex-layout.row#megamenu__drawer--top": {
+    "children": [
+      "flex-layout.col#drawer__top--backbtn",
+      "flex-layout.col#drawer__top--closebtn"
+    ],
+    "props": {
+      "blockClass": "megamenu__drawer--top",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#drawer__top--closebtn": {
+    "children": ["drawer-close-button"],
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign": "right",
+      "blockClass": ["drawer__top--closebtn"]
+    }
+  },
+  "flex-layout.col#drawer__top--backbtn": {
+    "children": ["mega-menu-go-back-btn"],
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign": "left",
+      "paddingLeft": 4,
+      "blockClass": ["drawer__top--backbtn"]
+    }
+  }
+}

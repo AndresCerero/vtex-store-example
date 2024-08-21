@@ -1,6 +1,12 @@
+/*--Container--*/
+
+.containerNormal--shelf__list--summary{
+     max-width: 100% !important;
+}
+
 /*---|Home|Summary|Wislist|--*/
 
-.element--info__summary :global(.vtex-wish-list-1-x-wishlistIconContainer) {
+.element--shelf__list--summary :global(.vtex-wish-list-1-x-wishlistIconContainer) {
      box-sizing: border-box;
      border-radius: 4px;
      position: absolute;
@@ -14,7 +20,7 @@
      width: max-content;
 }
 
-.element--info__summary :global(.vtex-wish-list-1-x-iconSize) {
+.element--shelf__list--summary :global(.vtex-wish-list-1-x-iconSize) {
      background: url('assets/img/wishheart.svg') no-repeat center center / cover;
      width: 20px;
      height: 20px;
@@ -22,24 +28,13 @@
 
 /*---|Home|Summary|Img|---*/
 
-.element--info__summary :global(.vtex-product-summary-2-x-imageWrapper) {
+.element--shelf__list--summary .imageWrapper {
      margin-top: 60px;
-     overflow: hidden;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-}
-
-.element--info__summary :global(.vtex-product-summary-2-x-imageNormal) {
-     min-height: max-content;
-     min-width: max-content;
-     object-fit: cover;
-     object-position: center;
 }
 
 /*---|Home|Summary|Name|---*/
 
-.element--info__summary .nameContainer{
+.element--shelf__list--summary .nameContainer{
      text-align: left;
      width: 100%;
      display: flex;
@@ -49,26 +44,26 @@
      padding-bottom: 4px;
 }
 
-.element--info__summary .productNameContainer{
+.element--shelf__list--summary .productNameContainer{
      height: 58px;
 }
 
 /*---|Home|Summary|Price|---*/
 
-.element--info__summary{
+.element--shelf__list--summary{
      display: flex;
      justify-content: space-between;
 }
 
 
-.element--info__summary :global(.vtex-product-price-1-x-listPrice) {
+.element--shelf__list--summary :global(.vtex-product-price-1-x-listPrice) {
      text-align: left;
      color: rgba(29, 39, 52, 0.4);
      font-size: 14px;
      font-weight: 400;
 }
 
-.element--info__summary :global(.vtex-product-price-1-x-sellingPrice) {
+.element--shelf__list--summary :global(.vtex-product-price-1-x-sellingPrice) {
      text-align: left;
      color: rgba(29, 39, 52, 1);
      font-size: 24px;
@@ -79,7 +74,7 @@
 
 /*---|---*/
 
-.element--info__summary :global(.vtex-button){
+.element--shelf__list--summary :global(.vtex-button){
      background-color: transparent;
      border-width: 0;
      color: #1D2734;
@@ -87,13 +82,13 @@
      text-transform: capitalize;
 }
 
-.element--info__summary :global(.vtex-add-to-cart-button-0-x-buttonText--button_buy){
+.element--shelf__list--summary :global(.vtex-add-to-cart-button-0-x-buttonText--list__summary--addbtn){
      display: flex;
      align-items: center;
      padding: 10px 0;
  }
 
-.element--info__summary :global(.vtex-add-to-cart-button-0-x-buttonText--button_buy)::before{
+.element--shelf__list--summary :global(.vtex-add-to-cart-button-0-x-buttonText--list__summary--addbtn)::before{
      content: "";
      background: url("assets/img/add_home_shopping_car.svg") no-repeat center center / cover;;
      display: inline-block;

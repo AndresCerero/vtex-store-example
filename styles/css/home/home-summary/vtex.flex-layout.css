@@ -1,0 +1,13 @@
+.flexRow--global__home--shelf :global(.vtex-store-components-3-x-container){
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.flexRowContent--global__home--shelf{
+    max-width: 1140px;
+}
+
+.flexRow--global__home--shelf{
+    background-color: #f5f4f6 ;
+}

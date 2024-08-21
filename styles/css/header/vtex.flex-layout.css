@@ -1,13 +1,42 @@
 /*---NavSticky---*/
 .flexRow--desktop__row--header{
     max-width: 1140px;
+    width: 100%;
+}
+
+.flexRowContent--desktop__row--header{
+    display: flex;
+    justify-content: space-between;
 }
 
 /*-|Trigger|MegaMenu|-*/
 
-.flexRow--h100,
-.flexRowContent--h100{
+.flexRow--header__container--megamenu,
+.flexRowContent--header__container--megamenu{
     height: 100%;
     position: relative;
 }
 
+
+.flexRowContent--header__container--megamenu :global(.vtex-mega-menu-2-x-triggerContainer) {
+    padding: 0;
+}
+
+/*----Mobile--*/
+
+.flexRowContent--header__mobile--item{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+}
+
+.flexRowContent--mobile__header--left,
+.flexRowContent--mobile__header--right{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.flexRow--mobile__header--left{
+ display: flex;
+ align-items: center;
+}

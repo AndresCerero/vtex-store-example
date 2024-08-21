@@ -1,4 +1,4 @@
-.productHighlightWrapper--wrapper--free__delivery {
+.productHighlightWrapper--summary__highfree--wrapper {
     margin-right: 2px;
     display: flex;
     color: rgba(250, 32, 128, 1);
@@ -6,6 +6,6 @@
     padding-bottom: 4px;
 }
 
-.productHighlightText--free_delivery {
+.productHighlightText--highfree__wrapper--text {
     margin-right: 6px;
 }

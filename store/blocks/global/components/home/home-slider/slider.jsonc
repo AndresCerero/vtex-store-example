@@ -1,19 +1,20 @@
 {
   /*--ZoneSlider---*/
-  "flex-layout.row#__zoneslider": {
+  "flex-layout.row#global__home--slider": {
     "title": "Text no one home",
-    "children": ["list-context.image-list#slider"],
+    "children": ["list-context.image-list#home__slider--item"],
     "props": {
-      "fullWidth": true
+      "fullWidth": true,
+      "blockClass": "global__home--slider"
     }
   },
 
   /*---Slider---*/
-  "list-context.image-list#slider": {
-    "children": ["slider-layout#demo-images"],
+  "list-context.image-list#home__slider--item": {
+    "children": ["slider-layout#slider__item--images"],
     "props": {
       "preload": true,
-      "height": 844,
+      "blockClass": "home__slider--item",
       "images": [
         {
           "loading": "eager",
@@ -25,8 +26,9 @@
     }
   },
 
-  "slider-layout#demo-images": {
+  "slider-layout#slider__item--images": {
     "props": {
+      "blockClass": "slider__item--images",
       "itemsPerPage": {
         "desktop": 1,
         "tablet": 1,

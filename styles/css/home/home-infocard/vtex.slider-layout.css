@@ -1,0 +1,43 @@
+@import url(sliderinfocardcustom.css);
+
+/*---|Home|Slider|InfoCard|--*/
+
+.sliderLayoutContainer--home__infocard--slide{
+    padding: 0 40px 80px 40px;
+}
+
+.paginationDotsContainer--home__infocard--slide{
+    position: absolute;
+    height: 80px;
+    align-items: center;
+}
+
+.paginationDot--home__infocard--slide {
+    width: 44px !important;
+    height: 40px !important;
+    border-radius: 0;
+    position: relative;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2px;
+}
+
+.paginationDot--home__infocard--slide::after {
+    width: 44px;
+    height: 2px;
+    content: "";
+    position: absolute;
+    background-color: #1D2734;
+}
+
+.paginationDot--home__infocard--slide--isActive::before {
+    width: 16px;
+    height: 16px;
+    content: "";
+    position: absolute;
+    right: -8px;
+    background-color: #1D2734;
+    border-radius: 50%;
+}

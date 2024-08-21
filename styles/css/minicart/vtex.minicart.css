@@ -1,3 +1,7 @@
+.openIconContainer{
+    padding: 0;
+}
+
 /*--Container*/
 .opened{
     display: flex;

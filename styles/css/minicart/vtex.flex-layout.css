@@ -1,3 +1,18 @@
+.flexColChild--desktop__header--minicart :global(.vtex-button__label){
+    padding-left: .6rem;
+    padding-right: .8rem;
+}
+
+.flexColChild--desktop__header--minicart :global(.vtex-button){
+   border: none;
+   margin: 0 0.4rem;
+}
+
+.flexColChild--desktop__header--minicart{
+    display: flex;
+    align-items: center;
+}
+
 .flexRow--minicard_logo{
     min-height:  6%;
     background-color: #ffffff;

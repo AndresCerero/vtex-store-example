@@ -10,4 +10,5 @@
     text-transform: capitalize;
     padding-left: 0;
     font-weight: 400;
+    display: inline-block;
 }

@@ -1,5 +1,5 @@
 {
-    "sticky-layout#desktop__sticky--header": {
+  "sticky-layout#desktop__sticky--header": {
     "props": {
       "blockClass": "desktop__sticky--header"
     },
@@ -18,7 +18,7 @@
       "flex-layout.col#desktop__header--megamenu",
       "flex-layout.col#global__header--logo",
       "flex-layout.col#desktop__header--searchbar",
-      "flex-layout.col#desktop__header--firstmenu",  
+      "flex-layout.col#desktop__header--firstmenu",
       "flex-layout.col#desktop__header--minicart",
       "flex-layout.col#desktop__header--buttonlogin"
     ]

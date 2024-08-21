@@ -1,23 +1,23 @@
-.infoCardContainer--info__card{
+.infoCardContainer--slider--card{
     flex-direction: column-reverse;
     margin: 0 20px 0 20px;
     border-radius: 12px;
     padding: 0;
 }
 
-.infoCardTextContainer--info__card{
+.infoCardTextContainer--slider--card{
     width: max-content;
     display: flex;
     text-align: left;
 }
 
-.infoCardHeadline--info__card{
+.infoCardHeadline--slider--card{
     display: flex;
     align-items: center;
     width: 100%;
 }
 
-.infoCardHeadline--info__card::after {
+.infoCardHeadline--slider--card::after {
     content: '';
     display: inline-block;
     width: 60px;
@@ -29,15 +29,15 @@
     right: 0;
 }
 
-.infoCardHeadline--info__card{
+.infoCardHeadline--slider--card{
     width: 100%;
 }
 
-.infoCardImageContainer--info__card{
+.infoCardImageContainer--slider--card{
     width: 100%;
 }
 
-.infoCardCallActionContainer--info__card{
+.infoCardCallActionContainer--slider--card{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,7 +45,7 @@
     text-decoration: none;
 }
 
-.infoCardCallActionContainer--info__card :global(.vtex-button){
+.infoCardCallActionContainer--slider--card :global(.vtex-button){
     font-size: 12px;
     font-weight: 400;
     border-radius: 40px;
@@ -53,7 +53,11 @@
     align-items: center;
 }
 
-.infoCardCallActionContainer--info__card :global(.vtex-button__label)::after {
+.infoCardCallActionContainer--slider--card :global(.vtex-button__label){
+    text-transform: math-auto;
+}
+
+.infoCardCallActionContainer--slider--card :global(.vtex-button__label)::after {
     content: '';
     display: inline-block;
     width: 20px;

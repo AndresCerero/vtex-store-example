@@ -1,3 +1,8 @@
+.triggerButtonIcon--header__megamenu--btntrigger{
+    width: 20px ;
+    height: 20px ;
+}
+
 .menuContainerNav--desktop__megamenu{
     font-size: 12px;
     font-weight: 300;

@@ -1,7 +1,0 @@
-{
-    "responsive-layout.desktop#desktop__screen--home":{
-        "children":[
-            "flex-layout.row#home__section"
-        ]
-    }
-}

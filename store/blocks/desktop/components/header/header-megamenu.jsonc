@@ -1,0 +1,31 @@
+{
+
+  "flex-layout.col#desktop__header--megamenu": {
+    "children": ["flex-layout.row#header__container--megamenu"]
+  },
+
+  "flex-layout.row#header__container--megamenu": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": ["header__container--megamenu"]
+    },
+    "children": ["mega-menu#header__megamenu", "mega-menu-trigger-btn#header__megamenu--btntrigger"]
+  },
+
+  "mega-menu#header__megamenu": {
+    "props": {
+      "openOnly": "horizontal",
+      "blockClass": "desktop__megamenu"
+    }
+  },
+
+  "mega-menu-trigger-btn#header__megamenu--btntrigger": {
+    "props": {
+      "Drawer": "drawer",
+      "blockClass": "header__megamenu--btntrigger"
+    }
+  }
+}

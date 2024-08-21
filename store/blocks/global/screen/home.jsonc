@@ -1,12 +1,10 @@
 {
   "store.home": { 
     "blocks": [
-      "responsive-layout.desktop#desktop__screen--home",
-      "responsive-layout.phone#Demo2",
       "flex-layout.row#global__header__secondmenu",
-      "flex-layout.row#__zoneslider",
-      "flex-layout.row#__zoneCard",
-      "flex-layout.row#home__summary"
+      "flex-layout.row#global__home--slider",
+      "flex-layout.row#global__home--infoCard",
+      "flex-layout.row#global__home--shelf"
     ]
   }  
 }

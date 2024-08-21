@@ -1,3 +1,7 @@
 .logoContainer--header__logo{
-    padding: 1rem;
+    padding: 0 .6rem;
+}
+
+.logoImage--header__logo{
+    max-width: unset;
 }

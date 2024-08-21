@@ -1,18 +1,17 @@
 /*---|Home|Summary|Stack|---*/
 
-.stackContainer--stack__summary{
+.stackContainer--list__summary--stack{
     border-radius: 4px;
     position: absolute;
     background-color: #1D2734;
     z-index: 9;
     display: flex;
-    width: 40%;  
+    width: 50%;  
     justify-content: center;
     align-items: center;
 }
 
-.stackItem--stack__summary{
-    padding: 6%;
+.stackItem--list__summary--stack{
     min-height: 40px;
     color: white;
     align-items: center;
@@ -20,7 +19,7 @@
     display: flex;
 }
 
-.stackItem--stack__summary:empty{
+.stackItem--list__summary--stack:empty{
     display: none;
 }
 
