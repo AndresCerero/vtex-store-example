@@ -18,3 +18,11 @@
     min-width: max-content;
     margin: 0 4rem 0 0;
 }
+
+
+/*--------*/
+
+.flexRow--plp__content--shelf{
+    height: 80%;
+    border: 1px solid;
+}

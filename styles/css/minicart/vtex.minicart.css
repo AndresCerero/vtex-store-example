@@ -1,65 +1,70 @@
-.openIconContainer{
-    padding: 0;
+.openIconContainer {
+  padding: 0;
 }
 
 /*--Container*/
-.opened{
-    display: flex;
-    justify-content: space-around;
+.drawer {
+  display: flex;
+  justify-content: space-around;
 }
 
-.drawerContent{
-    max-height: 100vh;
-}
-/*--Header---*/
-
-.closeIconContainer{
-    position: absolute;
-    right: 18px;
-    top: 40px;
-}
-
-/*--ProductList--*/
-
-.drawerStyles{
-    max-height: 90%;
+.drawerContent {
+  position: relative;
+  overflow-y: unset;
 }
 
 .minicartSideBarContentWrapper{
-    display: flex;
-    justify-content: space-evenly;
+    min-height: 96vh;
 }
 
-.minicartProductListContainer{
-    margin: 20px 0px;
-    
-    scrollbar-color: #BEBEBE #F2F2F2;
-    scrollbar-width: thin;
-    padding: 0;
+/*--Header---*/
+
+.closeIconContainer {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.minicartTitle {
+  margin-top: 16%;
+  padding: 0px 16px;
+}
+/*--ProductList--*/
+
+.minicartProductListContainer {
+  margin: 20px 0px;
+  scrollbar-color: #bebebe #f2f2f2;
+  scrollbar-width: thin;
+  padding: 0;
 }
 
 /*Summary*/
 
-.minicartSummary--minicart-summary{
-    border-radius: 4px;
-    border: 1px solid rgba(231, 231, 231, 1);
-    width: 100%;
+.minicartSummary--minicart__summary {
+  border-radius: 4px;
+  border: 1px solid rgba(231, 231, 231, 1);
+  width: 100%;
 }
 
-.minicartSummary--minicart-summary :global(.vtex-checkout-summary-0-x-summarySmallDisclaimer){
-    display: none;
+.minicartSummary--minicart__summary
+  :global(.vtex-checkout-summary-0-x-summarySmallDisclaimer) {
+  display: none;
 }
 
 /*Button*/
 
-.minicartCheckoutButton--minicart-button{
-    width: 100%;
-    padding: 0;
+.minicartCheckoutButton--minicard__checkout--btn {
+  width: 100%;
+  padding: 0;
 }
 
-.minicartCheckoutButton--minicart-button :global(.vtex-button){
-    width: 100%;
-    border-radius: 40px;
-    background: rgba(29, 39, 52, 1);
+.minicartCheckoutButton--minicard__checkout--btn :global(.vtex-button) {
+  width: 100%;
+  border-radius: 60px;
+  background: rgba(29, 39, 52, 1);
+  padding: 0.8rem 0rem;
 }
 
+.minicartCheckoutButton--minicard__checkout--btn :global(.vtex-button__label){
+  text-transform: math-auto;
+}

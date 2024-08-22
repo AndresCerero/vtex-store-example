@@ -1,7 +1,6 @@
 {
   "store.home": { 
     "blocks": [
-      "flex-layout.row#global__header__secondmenu",
       "flex-layout.row#global__home--slider",
       "flex-layout.row#global__home--infoCard",
       "flex-layout.row#global__home--shelf"

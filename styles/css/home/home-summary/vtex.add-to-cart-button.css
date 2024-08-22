@@ -1,0 +1,14 @@
+.buttonText--list__summary--addbtn{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.buttonText--list__summary--addbtn::before{
+    content: "";
+    background: url("assets/img/add_home_shopping_car.svg") no-repeat center center / cover;;
+    display: inline-block;
+    margin-right: 6px;
+    width: 20px;
+    height: 20px;
+}

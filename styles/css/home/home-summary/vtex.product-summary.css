@@ -4,26 +4,9 @@
      max-width: 100% !important;
 }
 
-/*---|Home|Summary|Wislist|--*/
-
-.element--shelf__list--summary :global(.vtex-wish-list-1-x-wishlistIconContainer) {
-     box-sizing: border-box;
-     border-radius: 4px;
-     position: absolute;
-     z-index: 9;
-     right: 0;
-     width: 30%;
-     overflow:hidden;
+.element--shelf__list--summary{
      display: flex;
-     justify-content: center;
-     align-items: center;
-     width: max-content;
-}
-
-.element--shelf__list--summary :global(.vtex-wish-list-1-x-iconSize) {
-     background: url('assets/img/wishheart.svg') no-repeat center center / cover;
-     width: 20px;
-     height: 20px;
+     justify-content: space-between;
 }
 
 /*---|Home|Summary|Img|---*/
@@ -48,31 +31,7 @@
      height: 58px;
 }
 
-/*---|Home|Summary|Price|---*/
-
-.element--shelf__list--summary{
-     display: flex;
-     justify-content: space-between;
-}
-
-
-.element--shelf__list--summary :global(.vtex-product-price-1-x-listPrice) {
-     text-align: left;
-     color: rgba(29, 39, 52, 0.4);
-     font-size: 14px;
-     font-weight: 400;
-}
-
-.element--shelf__list--summary :global(.vtex-product-price-1-x-sellingPrice) {
-     text-align: left;
-     color: rgba(29, 39, 52, 1);
-     font-size: 24px;
-     font-weight: 600;
-     padding-top: 4px;
-     padding-bottom: 4px;
-}
-
-/*---|---*/
+/*---|Home|Summary|Button|---*/
 
 .element--shelf__list--summary :global(.vtex-button){
      background-color: transparent;
@@ -80,19 +39,4 @@
      color: #1D2734;
      border: 1px solid #1D2734;
      text-transform: capitalize;
-}
-
-.element--shelf__list--summary :global(.vtex-add-to-cart-button-0-x-buttonText--list__summary--addbtn){
-     display: flex;
-     align-items: center;
-     padding: 10px 0;
- }
-
-.element--shelf__list--summary :global(.vtex-add-to-cart-button-0-x-buttonText--list__summary--addbtn)::before{
-     content: "";
-     background: url("assets/img/add_home_shopping_car.svg") no-repeat center center / cover;;
-     display: inline-block;
-     margin-right: 6px;
-     width: 20px;
-     height: 20px;
 }

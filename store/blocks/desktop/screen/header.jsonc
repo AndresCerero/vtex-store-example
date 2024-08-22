@@ -1,7 +1,8 @@
 {
   "header-layout.desktop": {
     "children": [
-        "sticky-layout#desktop__sticky--header"
+        "sticky-layout#desktop__sticky--header",
+        "flex-layout.row#global__header__secondmenu"
     ]
   }
 }

@@ -65,7 +65,10 @@
 
   //
   "search-content#plp": {
-    "blocks": ["gallery", "not-found"]
+    "blocks": [
+      "gallery",
+      "not-found"
+    ]
   },
 
   //

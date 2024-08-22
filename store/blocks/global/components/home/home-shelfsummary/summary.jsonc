@@ -52,8 +52,8 @@
       "add-to-list-btn#list__summary--wishbtn",
       "product-summary-image#list__summary--image",
       "product-summary-name",
-      "product-list-price",
-      "product-selling-price",
+      "product-list-price#list__summary--listprice",
+      "product-selling-price#list__summary--sellingprice",
       "vtex.product-highlights@2.x:product-highlights#list__summary--highfree",
       "add-to-cart-button#list__summary--addbtn"
     ],
@@ -61,6 +61,20 @@
       "blockClass": "shelf__list--summary"
     }
   },
+
+
+  "product-list-price#list__summary--listprice":{
+    "props": {
+      "blockClass": "list__summary--price"
+    }
+  },
+
+  "product-selling-price#list__summary--sellingprice":{
+    "props": {
+      "blockClass": "list__summary--price"
+    }
+  },
+
 
   "product-summary-image#list__summary--image":{
     "props": {

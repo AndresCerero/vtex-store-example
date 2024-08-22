@@ -1,0 +1,21 @@
+/*---|Home|Summary|Wislist|--*/
+
+.wishlistIconContainer--Summary_wish--button {
+    box-sizing: border-box;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 9;
+    right: 0;
+    width: 30%;
+    overflow:hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+}
+
+.wishlistIcon--Summary_wish--button {
+    background: url('assets/img/wishheart.svg') no-repeat center center / cover;
+    width: 20px;
+    height: 20px;
+}

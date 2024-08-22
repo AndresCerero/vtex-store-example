@@ -9,147 +9,161 @@
 
   "minicart.v2": {
     "props": {
-      "MinicartIcon": "icon-cart#minicart-icon"
+      "MinicartIcon": "icon-cart#minicart__icon"
     },
-    "children": ["flex-layout.row#minicard_logo", "minicart-base-content"]
+    "children": [
+      "flex-layout.row#minicard__logo",
+      "minicart-base-content#minicart__content"]
   },
 
-  "icon-cart#minicart-icon": {
+  "icon-cart#minicart__icon": {
     "props": {
       "size": 20,
-      "blockClass": ["minicart-icon"]
-    }
-  },
-
-  "flex-layout.row#minicard_logo": {
-    "children": ["logo"],
-    "props": {
-      "blockClass": "minicard_logo"
+      "blockClass": "minicart__icon"
     }
   },
 
   //Base Content
-  "minicart-base-content": {
-    "blocks": ["minicart-empty-state"],
-    "children": ["flex-layout.col#minicart-container"]
+  "minicart-base-content#minicart__content": {
+    "blocks": ["minicart-empty-state#minicart__emptystate"],
+    "children": ["flex-layout.col#minicart__container"]
   },
 
-  "flex-layout.col#minicart-container": {
+  "flex-layout.row#minicard__logo": {
+    "children": ["logo"],
     "props": {
-      "blockClass": "minicart--container"
+      "blockClass": "minicard__logo"
+    }
+  },
+
+  "flex-layout.col#minicart__container": {
+    "props": {
+      "blockClass": "minicart__container",
+      "preventVerticalStretch": true
     },
     "children": [
-      "flex-layout.row#product--list",
-      "flex-layout.row#minicart-footer"
+      "flex-layout.row#minicart__product",
+      "flex-layout.row#minicart__footer"
     ]
   },
 
   //|MiniCard|Footer|
 
-  "flex-layout.row#minicart-footer": {
-    "children": ["flex-layout.col#minicart-footer"],
+  "flex-layout.row#minicart__footer": {
+    "children": ["flex-layout.col#minicart__footer--content"],
     "props": {
-      "blockClass": "minicart--footer"
+      "blockClass": "minicart__footer"
     }
   },
 
-  "flex-layout.col#minicart-footer": {
-    "children": ["minicart-summary#minicard", "minicart-checkout-button"],
+  "flex-layout.col#minicart__footer--content": {
+    "children": [
+      "minicart-summary#minicart__summary", 
+      "minicart-checkout-button#minicard__checkout--btn"
+    ],
     "props": {
-      "blockClass": "minicart--row"
+      "blockClass": "minicart__footer--content"
     }
   },
 
   //Product List
-  "flex-layout.row#product--list": {
+  "flex-layout.row#minicart__product": {
     "props": {
-      "blockClass": "product--list"
+      "blockClass": "minicart__product"
     },
-    "children": ["minicart-product-list"]
+    "children": ["minicart-product-list#minicart__product--list"]
   },
 
-  "minicart-product-list": {
-    "blocks": ["product-list#minicart"]
+  "minicart-product-list#minicart__product--list": {
+    "blocks": ["product-list#minicart__product--content"],
+    "props":{
+      "blockClass": "minicart__product--list"
+    }
   },
 
-  "product-list#minicart": {
-    "blocks": ["product-list-content-mobile"]
+  "product-list#minicart__product--content": {
+    "blocks": ["product-list-content-mobile"],
+    "props":{
+      "blockClass": "minicart__product--content"
+    }
   },
 
   //Button
-  "minicart-checkout-button": {
+  "minicart-checkout-button#minicard__checkout--btn": {
     "props": {
       "finishShoppingButtonLink": "/checkout/#/",
-      "blockClass": "minicart-button"
+      "blockClass": "minicard__checkout--btn"
     }
   },
 
   //Summary
-  "minicart-summary#minicard": {
-    "blocks": ["checkout-summary.compact#minicart"],
+  "minicart-summary#minicart__summary": {
+    "blocks": ["checkout-summary.compact#minicart__summary--checkout"],
     "props": {
-      "blockClass": "minicart-summary"
+      "blockClass": "minicart__summary"
     }
   },
 
-  "checkout-summary.compact#minicart": {
-    "children": ["summary-totalizers#minicart"],
+  "checkout-summary.compact#minicart__summary--checkout": {
+    "children": ["summary-totalizers#minicart__summary--totalizers"],
     "props": {
-      "totalizersToShow": ["Items"]
+      "totalizersToShow": ["Items"],
+      "blockClass": "minicart__summary--checkout"
     }
   },
 
-  "summary-totalizers#minicart": {
+  "summary-totalizers#minicart__summary--totalizers": {
     "props": {
       "showTotal": true,
       "showDeliveryTotal": false,
-      "showOriginalTotal": true
+      "showOriginalTotal": true,
+      "blockClass": "minicart__summary--totalizers"
     }
   },
 
   //Empty
-  "minicart-empty-state": {
-    "children": ["flex-layout.row#empty-state"],
+  "minicart-empty-state#minicart__emptystate": {
+    "children": ["flex-layout.row#minicart__empty--state"],
     "props": {
-      "blockClass": "minicard--empty"
+      "blockClass": "minicart__emptystate"
     }
   },
 
-  "flex-layout.row#empty-state": {
-    "children": ["flex-layout.col#empty-state"],
+  "flex-layout.row#minicart__empty--state": {
+    "children": ["flex-layout.col#minicart__empty"],
     "props": {
-      "blockClass": "row--minicard__empty"
+      "blockClass": "minicart__empty--state"
     }
   },
 
-  "flex-layout.col#empty-state": {
+  "flex-layout.col#minicart__empty": {
     "children": [
-      "image#minicart-empty-state",
-      "rich-text#minicart-default-empty-state",
-      "rich-text#minicart-default-empty-statetwo",
-      "flex-layout.row#minicart-footer"
+      "image#minicart__empty--img",
+      "rich-text#minicart__empty--textone",
+      "rich-text#minicart__empty--texttwo",
+      "flex-layout.row#minicart__footer"
     ],
     "props": {
       "horizontalAlign": "center",
       "verticalAlign": "middle",
       "rowGap": 5,
-      "blockClass": "col--minicard__empty"
+      "blockClass": "minicart__empty"
     }
   },
 
-  "image#minicart-empty-state": {
+  "image#minicart__empty--img": {
     "props": {
       "src": "assets/img/CarEmpty.png"
     }
   },
 
-  "rich-text#minicart-default-empty-state": {
+  "rich-text#minicart__empty--textone": {
     "props": {
       "text": "¿Por qué tan solo?"
     }
   },
 
-  "rich-text#minicart-default-empty-statetwo": {
+  "rich-text#minicart__empty--texttwo": {
     "props": {
       "text": "¿Tenemos ofertas del 50% este mes?"
     }
