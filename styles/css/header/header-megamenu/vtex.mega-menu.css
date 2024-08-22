@@ -1,0 +1,51 @@
+.triggerButtonIcon--header__megamenu--btntrigger{
+    width: 20px ;
+    height: 20px ;
+}
+
+.menuContainerNav--desktop__megamenu{
+    font-size: 12px;
+    font-weight: 300;
+    position: absolute;
+    left: 0;
+    top: 64px;
+    min-width: max-content;
+    border-radius: 0 0 16px 16px;
+}
+
+.menuContainerNav--desktop__megamenu :global(.vtex-mega-menu-2-x-menuContainer){
+    min-width: max-content;
+    overflow: auto;
+    max-height: 80vh;
+    width: max-content;
+    scrollbar-width: none ;
+}
+
+.menuItem--desktop__megamenu{
+    min-width: max-content;
+}
+
+.menuItem--desktop__megamenu:hover{
+    border-left: 4px solid rgba(255, 131, 36, 1);
+    background-color: rgba(255, 131, 36, 0.2);
+}
+
+.accordionIconContainer--desktop__megamenu {
+    display: none;
+}
+
+.menuContainerNav--desktop__megamenu :global(.vtex-mega-menu-2-x-submenuContainer){
+    min-width: 60vw;
+    overflow: auto;
+    max-height: 80vh;
+    background-color: rgba(255, 131, 36, 0.2);
+    scrollbar-width: none ;
+}
+
+.menuContainerNav--desktop__megamenu :global(.vtex-mega-menu-2-x-submenuItem){
+    padding: 4px 0px;
+}
+
+.styledLinkText--desktop__megamenu{
+    padding-right: 1em;
+}

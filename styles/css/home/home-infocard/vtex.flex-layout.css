@@ -1,0 +1,17 @@
+.flexRow--global__home--infoCard{
+    background-color: #f5f4f6;
+}
+
+.flexRow--global__home--infoCard :global(.vtex-store-components-3-x-container){
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.flexRowContent--global__home--infoCard{
+    max-width: 1140px;
+}
+
+.flexRow--home__global__home--infoCard{
+    background-color: #f5f4f6 ;
+}

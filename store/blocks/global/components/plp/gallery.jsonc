@@ -1,0 +1,100 @@
+{
+  "gallery": {
+    "props": {
+      "layouts": [
+        {
+          "name": "whole",
+          "component": "OneOrTwoLineSummary",
+          "itemsPerRow": {
+            "desktop": 3,
+            "mobile": 1
+          }
+        },
+        {
+          "name": "two",
+          "component": "OneOrTwoLineSummary",
+          "itemsPerRow": {
+            "desktop": 3,
+            "mobile": 1
+          }
+        },
+        {
+          "name": "many",
+          "component": "ManyByLineSummary",
+          "itemsPerRow": {
+            "desktop": 3,
+            "mobile": 1
+          }
+        }
+      ],
+      "OneOrTwoLineSummary": "product-summary.shelf#plp__shelf",
+      "ManyByLineSummary": "product-summary.shelf"
+    }
+  },
+
+  //
+
+  "product-summary.shelf#plp__shelf": {
+    "props": {
+      "blockClass": "plp__shelf"
+    },
+    "children": [
+      "flex-layout.row#plp__content--shelf"
+    ]
+  },
+
+  "flex-layout.row#plp__content--shelf": {
+    "props": {
+      "colSizing": "auto",
+      //"preventVerticalStretch":true,
+      //"preventHorizontalStretch":true,
+      "blockClass": "plp__content--shelf"
+    },
+    "children": [
+      "flex-layout.col#content__shelf--left",
+      "flex-layout.col#content__shelf--right"
+    ]
+  },
+
+  "flex-layout.col#content__shelf--left": {
+    "props": {
+      "blockClass": "content__shelf--left"
+    },
+    "children": [
+      "product-summary-image"
+    ]
+  },
+
+  "flex-layout.col#content__shelf--right": {
+    "props": {
+      "preventVerticalStretch":true,
+      "blockClass": "content__shelf--right"
+    },
+    "children": [
+      "product-summary-name",
+      "product-list-price", 
+      "product-selling-price"
+    ]
+  },
+
+  //
+
+  "gallery-layout-option#whole": {
+    "props": {
+      "name": "whole"
+    },
+    "children": ["icon-single-grid"]
+  },
+  "gallery-layout-option#two": {
+    "props": {
+      "name": "two"
+    },
+    "children": ["icon-inline-grid"]
+  },
+  "gallery-layout-option#many": {
+    "props": {
+      "name": "many"
+    },
+    "children": ["icon-menu"]
+  }
+}

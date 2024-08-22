@@ -1,0 +1,68 @@
+{
+  /*--InfocardFile--*/
+  "flex-layout.row#global__home--infoCard": {
+    "title": "Text no one home",
+    "children": ["flex-layout.col#home__infocard"],
+    "props": {
+      "blockClass": "global__home--infoCard"
+    }
+  },
+  "flex-layout.col#home__infocard": {
+    "title": "Text col one home",
+    "children": ["rich-text#home__infocard--title", "slider-layout#home__infocard--slider"],
+    "props": {
+      "blockClass": "home__infocard"
+    }
+  },
+
+  /*--infocardSlider--*/
+
+  "rich-text#home__infocard--title": {
+    "props": {
+      "text": "An amazing product.",
+      "font": "heading-6",
+      "blockClass": "home__infocard--title"
+    }
+  },
+
+  "slider-layout#home__infocard--slider": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "home__infocard--slide"
+    },
+    "children": [
+      "flex-layout.col#infocard__slider--card",
+      "flex-layout.col#infocard__slider--card",
+      "flex-layout.col#infocard__slider--card",
+      "flex-layout.col#infocard__slider--card"
+    ]
+  },
+
+  "flex-layout.col#infocard__slider--card": {
+    "title": "Text no one home",
+    "children": ["info-card#slider--card"],
+    "props": {
+      "blockClass":"infocard__slider--card"
+    }
+  },
+
+  "info-card#slider--card": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": false,
+      "textPosition": "center",
+      "imageUrl": "assets/img/image_2.png",
+      "headline": "Heading",
+      "callToActionText": "Ver precio",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "slider--card",
+      "bodyText": "Builder platform is made by, buildership platform is made by..."
+    }
+  }
+}

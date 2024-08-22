@@ -1,0 +1,97 @@
+{
+  //---Mobile---
+
+  "product-list-content-mobile": {
+    "children": ["flex-layout.row#list__row--mobile"]
+  },
+
+  //|ProductCard|
+  "flex-layout.row#list__row--mobile": {
+    "children": [
+      "flex-layout.col#image__mobile",
+      "flex-layout.col#main__container--mobile",
+      "flex-layout.col#remove__button--mobile"
+    ],
+    "props": {
+      "blockClass": "list__row--mobile",
+      "fullWidth": true,
+      "paddingBottom": "6",
+      "paddingTop": "5",
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": "true"
+    }
+  },
+
+  //|Product|Img|
+  "flex-layout.col#image__mobile": {
+    "children": ["product-list-image"],
+    "props": {
+      "blockClass":"image__mobile",
+      "marginRight": "5"
+    }
+  },
+
+  //|Container|RowTop|Price|Quantity|
+  "flex-layout.col#main__container--mobile": {
+    "children": [
+      "flex-layout.row#top__mobile",
+      "flex-layout.row#price__mobile",
+      "flex-layout.row#quantity__selector--mobile"
+    ],
+    "props": {
+      "width": "grow",
+      "blockClass":"main__container--mobile"
+    }
+  },
+
+  //|RowTop|Name|RemoveButton|
+  "flex-layout.row#top__mobile": {
+    "children": [
+      "vtex.product-list:product-name"
+    ],
+    "props": {
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": "true",
+      "blockClass": "top__mobile"
+    }
+  },
+
+  //|Product|ButtonRemove|
+  "flex-layout.col#remove__button--mobile": {
+    "children": ["remove-button"],
+    "props": {
+      "blockClass":"remove__button--mobile",
+      "marginLeft": "3"
+    }
+  },
+
+  //|Product|Quantity|
+  "flex-layout.row#quantity__selector--mobile": {
+    "children": ["quantity-selector#quantity__selector"],
+    "props": {
+      "blockClass": "quantity__selector--mobile",
+      "marginTop": "2"
+    }
+  },
+  "quantity-selector#quantity__selector": {
+    "props": {
+      "mode": "stepper",
+      "blockClass":"quantity__selector"
+    }
+  },
+
+  //|Product|Price|
+  "flex-layout.row#price__mobile": {
+    "children": ["price"],
+    "props": {
+      "blockClass": "price__mobile",
+      "marginTop": "5",
+      "preventHorizontalStretch": "true"
+    }
+  },
+  "price": {
+    "props": {
+      "textAlign": "left"
+    }
+  }
+}

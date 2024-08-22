@@ -1,0 +1,12 @@
+/*---|Quantity|Botones|----*/
+
+.quantitySelectorContainer--quantity__selector{
+    width: 100%;
+}
+
+.quantitySelectorButton--quantity__selector{
+    background-color: #1D2734;
+    color: white;
+    border: 1px solid #1D2734;
+}
+

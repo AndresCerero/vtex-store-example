@@ -1,0 +1,48 @@
+@import url(slidersummarycustom.css);
+
+/*--|Home|Slider|Summary|--*/
+
+.sliderLayoutContainer--shelf__list--slider{
+    padding: 0 40px 80px 40px;
+}
+
+.slide--shelf__list--slider{
+    margin: 0 10px;
+}
+
+.paginationDotsContainer--shelf__list--slider{
+    position: absolute;
+    height: 80px;
+    align-items: center;
+}
+
+
+.paginationDot--shelf__list--slider {
+    width: 44px !important;
+    height: 40px !important;
+    border-radius: 0;
+    position: relative;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2px;
+}
+
+.paginationDot--shelf__list--slider::after {
+    width: 44px;
+    height: 2px;
+    content: "";
+    position: absolute;
+    background-color: #1D2734;
+}
+
+.paginationDot--shelf__list--slider--isActive::before {
+    width: 16px;
+    height: 16px;
+    content: "";
+    position: absolute;
+    right: -8px;
+    background-color: #1D2734;
+    border-radius: 50%;
+}

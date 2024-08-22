@@ -1,0 +1,16 @@
+{
+    "flex-layout.row#footer": { 
+    "props": {
+      "blockClass": "desktop__footer"
+    },
+    "children": [
+      "image"
+    ]
+  },
+  "image": {
+    "props": {
+      "width": 160,
+      "src": "assets/img/logowhite.svg"
+    }
+  }
+}

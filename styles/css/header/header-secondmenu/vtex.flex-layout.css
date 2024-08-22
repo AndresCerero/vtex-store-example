@@ -1,0 +1,19 @@
+
+.flexCol--global__header__secondmenu{
+    box-shadow: 0px 2px 16px 0px #0000000F;
+}
+
+.flexRow--global__header__secondmenu :global(.vtex-store-components-3-x-container){
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.flexRowContent--global__header__secondmenu{
+    max-width: 1140px;
+}
+
+.flexCol--header__secondmenu{
+    overflow-x: scroll;
+    scrollbar-width: none;
+}

@@ -1,0 +1,7 @@
+:global(.vtex-slider-layout-0-x-paginationDot--home__infocard--slide--isActive ~ .vtex-slider-layout-0-x-paginationDot--home__infocard--slide::after) {
+    width: 44px;
+    height: 2px;
+    content: "";
+    background-color: rgba(29, 39, 52, 0.4);
+    position: absolute;
+}

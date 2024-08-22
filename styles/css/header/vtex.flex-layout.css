@@ -1,77 +1,42 @@
 /*---NavSticky---*/
-.flexRow--desktop__header{
-    background-color: rgb(255, 255, 255);
+.flexRow--desktop__row--header{
+    max-width: 1140px;
+    width: 100%;
 }
 
-/*---Nav|Button login--*/
-.flexColChild--button__header :global(.vtex-button){
-    background-color: rgb(2, 0, 0);
-    color: white;
-    border-radius: 40px;
-}
-
-.flexColChild--button__header :global(.vtex-login-2-x-label){
-    padding: 0;
-}
-
-.flexColChild--button__header  :global(.vtex-login-2-x-label){
-    color: white;
-    text-align: center;
-}
-
-/*---NavOne|Tendencias IT Globers--*/
-
-.flexColChild--header__menu :global(.vtex-menu-2-x-styledLinkContainer){
-    font-weight: 400;
-    font-size: 2px;
-}
-
-.flexColChild--header__menu :global(.vtex-menu-2-x-styledLinkContainer):hover{
-    text-decoration: underline;
-}
-
-/*---NavTwo|Collections Departament*/
-
-.flexCol--collections__departament{
-    overflow-x: scroll;
-    scrollbar-width: none;
-}
-
-.flexColChild--collections__departament :global(.vtex-menu-2-x-menuContainer) {
-    min-height: 68px;
-}
-
-.flexColChild--collections__departament :global(.vtex-menu-2-x-styledLinkContainer){
-    padding: 0px;
-}
-
-.flexColChild--collections__departament :global(.vtex-menu-2-x-menuItem){
+.flexRowContent--desktop__row--header{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
 }
-
-.flexColChild--collections__departament :global(.vtex-menu-2-x-menuItem):hover{
-    border-bottom: 2px solid black;
-}
-
-.flexColChild--collections__departament :global(.vtex-menu-2-x-styledLinkContent){
-    flex-direction: column;
-    font-size: 12px;
-    font-weight:300;
-    text-align: center;
-}
-
-.flexColChild--collections__departament :global(.vtex-menu-2-x-styledLinkIcon){
-   margin-bottom: 6px;
-}
-
 
 /*-|Trigger|MegaMenu|-*/
 
-.flexRow--h100,
-.flexRowContent--h100{
+.flexRow--header__container--megamenu,
+.flexRowContent--header__container--megamenu{
     height: 100%;
     position: relative;
 }
 
+
+.flexRowContent--header__container--megamenu :global(.vtex-mega-menu-2-x-triggerContainer) {
+    padding: 0;
+}
+
+/*----Mobile--*/
+
+.flexRowContent--header__mobile--item{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+}
+
+.flexRowContent--mobile__header--left,
+.flexRowContent--mobile__header--right{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.flexRow--mobile__header--left{
+ display: flex;
+ align-items: center;
+}

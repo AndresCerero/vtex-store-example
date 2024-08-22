@@ -1,0 +1,7 @@
+:global(.vtex-slider-layout-0-x-paginationDot--shelf__list--slider--isActive ~ .vtex-slider-layout-0-x-paginationDot--shelf__list--slider::after) {
+    width: 44px;
+    height: 2px;
+    content: "";
+    background-color: rgba(29, 39, 52, 0.4);
+    position: absolute;
+}

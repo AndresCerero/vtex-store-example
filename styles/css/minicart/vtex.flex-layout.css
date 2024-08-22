@@ -1,39 +1,60 @@
-.flexRow--minicard_logo{
-    min-height:  6%;
-    background-color: #ffffff;
+.flexColChild--desktop__header--minicart :global(.vtex-button__label){
+    padding-left: .6rem;
+    padding-right: .8rem;
+}
+
+.flexColChild--desktop__header--minicart :global(.vtex-button){
+   border: none;
+   margin: 0 0.4rem;
+}
+
+.flexColChild--desktop__header--minicart{
     display: flex;
     align-items: center;
 }
 
-.flexCol--minicart--container{
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+.flexRow--minicard__logo{
+    position: absolute;
+    top: 0;
+}
+
+.flexRow--minicard__logo :global(.vtex-store-components-3-x-logoContainer){
+    display: inline-block;
+    padding: 16px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    max-height: 94%;
+    align-items: center;
 }
 
-.flexColChild--minicart--container{
+.flexCol--minicart__container{
+    padding: 0px 16px;
+    min-height: 20%;
+    max-height: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flexColChild--minicart__container:last-child{
     margin: 10px 0px;
-    overflow: auto;
+    overflow: unset;
+    height: 100%;
 }
 
-.flexColChild--minicart--container:first-child {
+.flexColChild--minicart__container:first-child {
     scrollbar-color: #BEBEBE #F2F2F2;
     scrollbar-width: thin;
     padding: 0;
-    min-height: 70%;
+    min-height: 20%;
+    max-height: 80%;
     margin: 10px 0px;
     overflow: auto;
 }
 
-.flexCol--col--minicard__empty {
+.flexCol--minicart__empty {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
 
-.flexColChild--col--minicard__empty{
+.flexColChild--minicart__empty{
     width: 100%;
 }
 
@@ -44,4 +65,19 @@
 .flexColChild--minicart-col{
     display: flex;
     justify-content: center;
+}
+
+/*--MiniCart|img|--*/
+.flexColChild--image__mobile {
+    display: flex;
+    align-items: center;
+    border: 1px solid #E7E7E7;
+    border-radius: 8px;
+}
+
+
+/*--Product|name---*/
+.flexRowContent--top__mobile :global(.vtex-product-list-0-x-productName) {
+    max-height: 74px;
+    overflow: hidden;
 }

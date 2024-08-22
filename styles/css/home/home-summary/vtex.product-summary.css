@@ -1,0 +1,42 @@
+/*--Container--*/
+
+.containerNormal--shelf__list--summary{
+     max-width: 100% !important;
+}
+
+.element--shelf__list--summary{
+     display: flex;
+     justify-content: space-between;
+}
+
+/*---|Home|Summary|Img|---*/
+
+.element--shelf__list--summary .imageWrapper {
+     margin-top: 60px;
+}
+
+/*---|Home|Summary|Name|---*/
+
+.element--shelf__list--summary .nameContainer{
+     text-align: left;
+     width: 100%;
+     display: flex;
+     justify-content: flex-start;
+     overflow-y: hidden;
+     padding-top: 4px;
+     padding-bottom: 4px;
+}
+
+.element--shelf__list--summary .productNameContainer{
+     height: 58px;
+}
+
+/*---|Home|Summary|Button|---*/
+
+.element--shelf__list--summary :global(.vtex-button){
+     background-color: transparent;
+     border-width: 0;
+     color: #1D2734;
+     border: 1px solid #1D2734;
+     text-transform: capitalize;
+}

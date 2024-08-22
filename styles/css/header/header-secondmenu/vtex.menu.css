@@ -1,0 +1,29 @@
+.menuContainer--header__secondmenu--items{
+    min-height: 68px;
+}
+
+.menuContainer--header__secondmenu--items .styledLinkContainer{
+    padding: 0px 1rem;
+    margin: 0px;
+}
+
+.menuContainer--header__secondmenu--items .menuItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuContainer--header__secondmenu--items .menuItem:hover{
+    border-bottom: 2px solid black;
+}
+
+.menuContainer--header__secondmenu--items .styledLinkContent{
+    flex-direction: column;
+    font-size: 12px;
+    font-weight:300;
+    text-align: center;
+}
+
+.menuContainer--header__secondmenu--items .styledLinkIcon{
+    margin-bottom: 6px;
+}

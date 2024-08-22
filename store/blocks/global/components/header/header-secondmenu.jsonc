@@ -1,0 +1,312 @@
+{
+  /*----*/
+  "flex-layout.row#global__header__secondmenu": { 
+    "title": "Menu destacado", 
+    "children": ["flex-layout.col#header__secondmenu"],
+    "props": {
+      "blockClass": "global__header__secondmenu"
+    }
+  },
+  "flex-layout.col#header__secondmenu": {
+    "title": "Text col one home",
+    "children": ["vtex.menu@2.x:menu#header__secondmenu--items"],
+    "props": {
+      "blockClass":"header__secondmenu"
+    }
+  },
+
+  "vtex.menu@2.x:menu#header__secondmenu--items": {
+    "props": {
+      "blockClass": ["header__secondmenu--items"]
+    },
+    "children": [
+      "menu-item#secondmenu__item--one",
+      "menu-item#secondmenu__item--two",
+      "menu-item#secondmenu__item--three",
+      "menu-item#secondmenu__item--four",
+      "menu-item#secondmenu__item--five",
+      "menu-item#secondmenu__item--six",
+      "menu-item#secondmenu__item--seven",
+      "menu-item#secondmenu__item--eight",
+      "menu-item#secondmenu__item--nine",
+      "menu-item#secondmenu__item--ten",
+      "menu-item#secondmenu__item--eleven",
+      "menu-item#secondmenu__item--twelve",
+      "menu-item#secondmenu__item--thirteen"
+    ]
+  },
+
+  "menu-item#secondmenu__item--one": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Food"
+      },
+      "iconProps": {
+        "id": "fast-food",
+        "size": 20,
+        "viewBox": "0 0 20 20",
+        "activeClassName": "rebel-pink",
+        "mutedClassName": "c-action-primary"
+      }
+    }
+  },
+  "menu-item#secondmenu__item--two": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Fitness"
+      },
+      "iconProps": {
+        "id": "fitness",
+        "size": 20,
+        "viewBox": "0 0 20 20",
+        "activeClassName": "rebel-pink",
+        "mutedClassName": "c-action-primary"
+      }
+    }
+  },
+  "menu-item#secondmenu__item--three": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "En el Ártico"
+      },
+      "iconProps": {
+        "id": "snow",
+        "size": 20,
+        "viewBox": "0 0 20 20",
+        "activeClassName": "rebel-pink",
+        "mutedClassName": "c-action-primary"
+      }
+    }
+  },
+  "menu-item#secondmenu__item--four": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Poolday"
+      },
+      "iconProps": {
+        "id": "holiday",
+        "size": 20,
+        "viewBox": "0 0 20 20",
+        "activeClassName": "rebel-pink",
+        "mutedClassName": "c-action-primary"
+      }
+    }
+  },
+  "menu-item#secondmenu__item--five": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Hoteles"
+      },
+      "iconProps": {
+        "id": "hotel",
+        "size": 20,
+        "viewBox": "0 0 20 20",
+        "activeClassName": "rebel-pink",
+        "mutedClassName": "c-action-primary"
+      }
+    }
+  },
+  "menu-item#secondmenu__item--six": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Casas"
+      },
+      "iconProps": {
+        "id": "house",
+        "size": 20,
+        "viewBox": "0 0 20 20",
+        "activeClassName": "rebel-pink",
+        "mutedClassName": "c-action-primary"
+      }
+    }
+  },
+  "menu-item#secondmenu__item--seven": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Hoteles"
+      },
+      "iconProps": {
+        "id": "hotel",
+        "size": 20,
+        "viewBox": "0 0 20 20",
+        "activeClassName": "rebel-pink",
+        "mutedClassName": "c-action-primary"
+      }
+    }
+  },
+  "menu-item#secondmenu__item--eight": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Naturales"
+      },
+      "iconProps": {
+        "id": "spa",
+        "size": 20,
+        "viewBox": "0 0 20 20",
+        "activeClassName": "rebel-pink",
+        "mutedClassName": "c-action-primary"
+      }
+    }
+  },
+  "menu-item#secondmenu__item--nine": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Closet"
+      },
+      "iconProps": {
+        "id": "check__room",
+        "size": 20,
+        "viewBox": "0 0 20 20",
+        "activeClassName": "rebel-pink",
+        "mutedClassName": "c-action-primary"
+      }
+    }
+  },
+  "menu-item#secondmenu__item--ten": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Playas"
+      },
+      "iconProps": {
+        "id": "beach",
+        "size": 20,
+        "viewBox": "0 0 20 20",
+        "activeClassName": "rebel-pink",
+        "mutedClassName": "c-action-primary"
+      }
+    }
+  },
+  "menu-item#secondmenu__item--eleven": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Alpinismo"
+      },
+      "iconProps": {
+        "id": "elderly",
+        "size": 20,
+        "viewBox": "0 0 20 20",
+        "activeClassName": "rebel-pink",
+        "mutedClassName": "c-action-primary"
+      }
+    }
+  },
+  "menu-item#secondmenu__item--twelve": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Delivery"
+      },
+      "iconProps": {
+        "id": "moped",
+        "size": 20,
+        "viewBox": "0 0 20 20",
+        "activeClassName": "rebel-pink",
+        "mutedClassName": "c-action-primary"
+      }
+    }
+  },
+  "menu-item#secondmenu__item--thirteen": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Cervezas"
+      },
+      "iconProps": {
+        "id": "beer",
+        "size": 20,
+        "viewBox": "0 0 20 20",
+        "activeClassName": "rebel-pink",
+        "mutedClassName": "c-action-primary"
+      }
+    }
+  }
+}
