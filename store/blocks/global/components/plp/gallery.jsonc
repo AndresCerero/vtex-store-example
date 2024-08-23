@@ -3,7 +3,7 @@
     "props": {
       "layouts": [
         {
-          "name": "whole",
+          "name": "gallery__first",
           "component": "OneOrTwoLineSummary",
           "itemsPerRow": {
             "desktop": 3,
@@ -32,7 +32,7 @@
     }
   },
 
-  //
+  // Summary
 
   "product-summary.shelf#plp__shelf": {
     "props": {
@@ -61,8 +61,14 @@
       "blockClass": "content__shelf--left"
     },
     "children": [
-      "product-summary-image"
+      "product-summary-image#summary__img"
     ]
+  },
+
+  "product-summary-image#summary__img" : {
+    "props": {
+      "blockClass": "summary__img"
+    }
   },
 
   "flex-layout.col#content__shelf--right": {
@@ -71,19 +77,70 @@
       "blockClass": "content__shelf--right"
     },
     "children": [
-      "product-summary-name",
-      "product-list-price", 
-      "product-selling-price"
+      "product-summary-name#summary__name",
+      "product-list-price#summary__listprice", 
+      "product-selling-price#summary__sellprice",
+      "vtex.product-highlights@2.x:product-highlights#plp__highfree"
     ]
+  },
+
+  "product-summary-name#summary__name":{
+    "props": {
+      "blockClass":"summary__name"
+    }
+  },
+  "product-list-price#summary__listprice":{
+    "props": {
+      "blockClass":"summary__listprice"
+    }
+  },
+  "product-selling-price#summary__sellprice":{
+    "props": {
+      "blockClass":"summary__sellprice"
+    }
   },
 
   //
 
-  "gallery-layout-option#whole": {
+  // Summary | Highlight
+
+
+  "vtex.product-highlights@2.x:product-highlights#plp__highfree" : {
+    "children": ["product-highlight-wrapper#plp__highfree--wrapper"],
+    "props":{
+      "filter": {
+        "type": "show",
+        "highlightNames": ["Envío Gratis"],
+        "blockClass": "plp__highfree"
+      }
+    }
+  },
+
+  "product-highlight-wrapper#plp__highfree--wrapper": {
+    "children": [
+      "product-highlight-text#plp__wrapper--text",
+      "icon-star" // cambiar icono
+    ],
+    "props":{
+      "blockClass": "plp__highfree--wrapper"
+    }
+  },
+
+  "product-highlight-text#plp__wrapper--text": {
     "props": {
-      "name": "whole"
+      "message": "{highlightName}",
+      "blockClass": "plp__wrapper--text"
+    }
+  },
+
+  //
+
+  "gallery-layout-option#gallery__first": {
+    "props": {
+      "name": "gallery__first",
+      "blockClass":"gallery__first"
     },
-    "children": ["icon-single-grid"]
+    "children": ["icon-single-grid"] 
   },
   "gallery-layout-option#two": {
     "props": {

@@ -1,0 +1,11 @@
+.listPriceValue--summary__listprice {
+  color: var(--color__atenuante);
+  font-size: var(--parrafos__s12);
+  font-weight: var(--parrafos__w400);
+}
+
+.currencyContainer--summary__sellprice {
+  color: var(--color__principal);
+  font-size: var(--parrafos__s20);
+  font-weight: var(--parrafos__w600);
+}

@@ -30,9 +30,10 @@
   },
 
   "flex-layout.col#two": {
-    "children": ["order-by.v2"],
+    "children": ["order-by.v2", "gallery-layout-switcher"],
     "props": {
-      "blockClass": "head__two"
+      "blockClass": "head__two",
+      "preventVerticalStretch": true
     }
   },
 
@@ -53,7 +54,6 @@
 
   "flex-layout.col#gallery__plp": {
     "children": [
-      "gallery-layout-switcher",
       "search-content#plp",
       "search-products-count-per-page",
       "search-fetch-more"
@@ -75,10 +75,13 @@
   "gallery-layout-switcher": {
     "children": [
       //It follows the same whole -> two -> many order
-      "gallery-layout-option#whole",
+      "gallery-layout-option#gallery__first",
       "gallery-layout-option#two",
       "gallery-layout-option#many"
-    ]
+    ],
+    "props": {
+      "blockClass": "gallery__switcher"
+    }
   },  
   "search-fetch-more": {
     "props": {

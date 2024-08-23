@@ -1,15 +1,128 @@
-.galleryTitle--layout{
-    margin: 0;
-    padding: 1rem 0;
-}
+/*--|gallerySwitcher|--*/
 
-.totalProducts--layout{
-    padding: 0;
-    text-align: left;
+.galleryLayoutSwitcher--gallery__switcher{
     padding-bottom: 2rem;
 }
 
-.galleryLayoutSwitcher{
-    display: flex;
-    justify-content: flex-end;
+.galleryTitle--layout {
+  margin: 0;
+  padding: 1rem 0;
+  font-size: var(--parrafos__s20);
+  font-weight: var(--parrafos__w600);
+}
+
+.totalProducts--layout {
+  padding: 0;
+  text-align: left;
+  padding-bottom: 2rem;
+  font-size: var(--parrafos__s14);
+  font-weight: var(--parrafos__w300);
+  color: var(--color__principal);
+  text-transform: lowercase;
+}
+
+.totalProductsMessage {
+  color: currentColor;
+}
+
+.galleryLayoutSwitcher {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+/*--filter-navigator--*/
+
+.filter__container--title {
+  display: none;
+}
+
+.filterAvailable {
+  background-color: var(--color__graytwo);
+  border-radius: 30px;
+  padding: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.filterItem :global(.vtex-checkbox__line-container) {
+  display: flex;
+  align-items: center;
+}
+
+.filterItem{
+    padding: 0.4rem 0rem;
+}
+.filterItem :global(.vtex-checkbox__label) {
+  font-size: var(--parrafos__s12);
+  font-weight: var(--parrafos__w300);
+  margin-left: 0.2rem;
+}
+
+.filterTitleSpan {
+  margin-left: 0.5rem;
+  font-size: var(--parrafos__s14);
+  font-weight: var(--parrafos__w400);
+}
+
+.filterTemplateOverflow{
+    margin-left: 1rem;
+    padding-bottom: 0;
+    scrollbar-width: thin;
+    scrollbar-color: #BEBEBE #F2F2F2;
+}
+
+.filter__container{
+    padding-bottom: 0.8rem;
+}
+
+.filter__container--category-2 {
+  border-bottom-style: none;
+  border-bottom-width: 0;
+}
+
+.filter__container--brand {
+  border-bottom-style: none;
+  border-bottom-width: 0;
+}
+
+.filter__container--category-3 {
+  border-bottom-style: none;
+  border-bottom-width: 0;
+}
+
+.filter__container--priceRange {
+  border-bottom-style: none;
+  border-bottom-width: 0;
+}
+
+
+/*----|OrderBy|---*/
+
+.orderByButton{
+  border-radius: 30px;
+  background-color: var(--color__graytwo);
+  padding: 0.8rem 0.5rem;
+}
+
+.filterPopupTitle{
+  display: flex;
+  align-items: center;
+  font-size: 0;
+}
+
+.filterPopupTitle::before{
+  content: '';
+  background: url('assets/img/Icon_filter.svg') no-repeat center center / cover ;
+  margin: 0rem 0.8rem;
+  width: 15px;
+  height: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.orderByText{
+  color: var(--color__principal);
+  font-size: var(--parrafos__s14);
+  font-weight: var(--parrafos__w400);
+  text-transform: math-auto;
 }
