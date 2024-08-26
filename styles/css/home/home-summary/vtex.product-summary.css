@@ -31,6 +31,11 @@
      height: 58px;
 }
 
+.element--shelf__list--summary .productNameContainer .brandName{
+     font-size: var(--parrafos__s14);
+     font-weight: var(--parrafos__w400);
+}
+
 /*---|Home|Summary|Button|---*/
 
 .element--shelf__list--summary :global(.vtex-button){

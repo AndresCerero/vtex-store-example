@@ -1,15 +1,15 @@
 .listPrice--list__summary--price {
     text-align: left;
-    color: rgba(29, 39, 52, 0.4);
-    font-size: 14px;
-    font-weight: 400;
+    color:var(--color__graytwo);
+    font-size: var(--parrafos__s14);
+    font-weight: var(--parrafos__w400);
 }
 
 .sellingPrice--list__summary--price {
     text-align: left;
     color: rgba(29, 39, 52, 1);
-    font-size: 24px;
-    font-weight: 600;
+    font-size: var(--parrafos__s20);
+    font-weight: var(--parrafos__w600);
     padding-top: 4px;
     padding-bottom: 4px;
 }

@@ -11,6 +11,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
+    border-bottom: 2px solid transparent; 
 }
 
 .menuContainer--header__secondmenu--items .menuItem:hover{
@@ -19,8 +21,9 @@
 
 .menuContainer--header__secondmenu--items .styledLinkContent{
     flex-direction: column;
-    font-size: 12px;
-    font-weight:300;
+    font-size: var(--parrafos__s12);
+    font-weight:var(--parrafos__w300);
+    color: var(--color__principal);
     text-align: center;
 }
 

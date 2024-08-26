@@ -38,7 +38,7 @@
 }
 
 .filterAvailable {
-  background-color: var(--color__graytwo);
+  background-color: var(--color__graythree);
   border-radius: 30px;
   padding: 0.6rem;
   margin-bottom: 0.6rem;
@@ -100,7 +100,7 @@
 
 .orderByButton{
   border-radius: 30px;
-  background-color: var(--color__graytwo);
+  background-color: var(--color__graythree);
   padding: 0.8rem 0.5rem;
 }
 

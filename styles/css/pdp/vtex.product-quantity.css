@@ -31,9 +31,21 @@
 .quantitySelectorContainer :global(.vtex-numeric-stepper__minus-button-container) {
   flex-grow: 1;
 }
+
+.quantitySelectorContainer :global(.vtex-numeric-stepper__minus-button__text) {
+  font-size: 26px;
+  font-weight: 400;
+}
+
 .quantitySelectorContainer :global(.vtex-numeric-stepper__plus-button-container) {
   flex-grow: 1;
 }
+
+.quantitySelectorContainer :global(.vtex-numeric-stepper__plus-button__text) {
+  font-size: 26px;
+  font-weight: 400;
+}
+
 
 
 .quantitySelectorContainer :global(.vtex-numeric-stepper__minus-button){
@@ -59,9 +71,3 @@
     border-bottom: 1px solid #E7E7E7;
     display: flex;
 }
-/*
-vtex-numeric-stepper-wrapper
-vtex-numeric-stepper-container
-vtex-numeric-stepper__minus-button-container
-vtex-numeric-stepper__minus-button
-*/

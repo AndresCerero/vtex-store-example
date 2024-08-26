@@ -55,6 +55,11 @@
   margin-right: 6px;
 }
 
+.flexRowContent--top__right--price {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .flexRow--top__right--cart {
   width: 100%;
 }

@@ -3,11 +3,14 @@
     --color__atenuante: #1D273466;
     --color__rosado:#FA2080;
     --color__gray:#E7E7E7;
-    --color__graytwo:#1d27341a;
+    --color__graytwo:#1d27347a;
+    --color__graythree:#1d273418;
     --color__background:#F2F2F2;
     --color__naranja:#FF8324;
     --color__menu:#FFE6D3;
     --color__purple:#492A77;
+    --color__white:#F2F2F2;
+    --parrafos__w200: 200;
     --parrafos__s12: 12px;
     --parrafos__w300: 300;
     --parrafos__s14: 14px;
@@ -15,4 +18,5 @@
     --parrafos__s16: 16px;
     --parrafos__w600: 600;
     --parrafos__s20: 20px;
+    --parrafos__s24: 24px;
 }

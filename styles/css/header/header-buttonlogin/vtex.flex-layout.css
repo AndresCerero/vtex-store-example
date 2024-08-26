@@ -9,6 +9,7 @@
 .flexColChild--desktop__header--buttonlogin :global(.vtex-login-2-x-label){
     text-transform: capitalize;
     padding-left: 0;
-    font-weight: 400;
+    font-weight: var(--parrafos__w300);
+    font-size: var(--parrafos__s14);
     display: inline-block;
 }

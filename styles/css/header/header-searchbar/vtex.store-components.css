@@ -14,3 +14,9 @@
 .searchBarInnerContainer--header__searchbar :global(.vtex-input__suffix){
     background: rgba(245, 244, 246, 1);
 }
+
+.searchBarInnerContainer--header__searchbar :global(.vtex-styleguide-9-x-input)::placeholder{
+    font-size: var(--parrafos__s12);
+    font-weight: var(--parrafos__w300);
+    color: var(--color__principal);
+}

@@ -1,8 +1,9 @@
 /*---NavOne|Tendencias IT Globers--*/
 
 .menuContainer--header__firstmenu .styledLink{
-    font-weight: 600;
-    font-size: 12px;
+    font-weight:var(--parrafos__w600);
+    font-size: var(--parrafos__s12);
+    color: var(--color__principal);
 }
 
 .menuContainer--header__firstmenu .styledLink:hover{

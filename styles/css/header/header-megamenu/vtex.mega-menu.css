@@ -1,28 +1,65 @@
+@import url(megamenucustom.css);
+
+
 .triggerButtonIcon--header__megamenu--btntrigger{
     width: 20px ;
     height: 20px ;
 }
 
-.menuContainerNav--desktop__megamenu{
-    font-size: 12px;
-    font-weight: 300;
-    position: absolute;
+.menuContainerNav--desktop__megamenu::after{
+    content: '';
+    position: fixed;
+    top: 62px;
     left: 0;
-    top: 64px;
-    min-width: max-content;
-    border-radius: 0 0 16px 16px;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
 }
 
-.menuContainerNav--desktop__megamenu :global(.vtex-mega-menu-2-x-menuContainer){
-    min-width: max-content;
-    overflow: auto;
+.menuContainerNav--desktop__megamenu{
+    position: absolute;
+    left: 0;
+    top: 62px;
+    border-radius: 0 0 12px 12px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 2fr;
+    overflow: hidden;
+}
+
+/*----Menu Container----*/
+
+.menuContainerNav--desktop__megamenu .menuContainer{
     max-height: 80vh;
-    width: max-content;
-    scrollbar-width: none ;
+    box-sizing: border-box;
+    overflow: auto;    
+    scrollbar-width: none;
+    min-width: max-content;
+    width: unset;
+    border-right-style: unset;
+    border-right-width: unset;
+}
+
+.menuContainerNav--desktop__megamenu 
+.menuContainer 
+.menuItem--desktop__megamenu 
+.styledLinkContainer--desktop__megamenu 
+.styledLink--desktop__megamenu 
+.styledLinkContent--desktop__megamenu 
+.styledLinkText--desktop__megamenu{
+    padding-right: 1em;
+    font-size:var(--parrafos__s12);
+    font-weight:var(--parrafos__w300);
+    color:var(--color__principal);
 }
 
 .menuItem--desktop__megamenu{
-    min-width: max-content;
+    padding-right: 10px;
+    border-left: 4px solid transparent;
+    box-sizing: border-box;
 }
 
 .menuItem--desktop__megamenu:hover{
@@ -34,18 +71,93 @@
     display: none;
 }
 
-.menuContainerNav--desktop__megamenu :global(.vtex-mega-menu-2-x-submenuContainer){
-    min-width: 60vw;
+
+/*---SubContainer--*/
+.submenuList{
+    gap: 1rem;
+}
+
+.menuContainerNav--desktop__megamenu .submenuContainer{
     overflow: auto;
     max-height: 80vh;
     background-color: rgba(255, 131, 36, 0.2);
-    scrollbar-width: none ;
+    scrollbar-width: none;
+    width: unset;
+    min-width: 28vw;
 }
 
-.menuContainerNav--desktop__megamenu :global(.vtex-mega-menu-2-x-submenuItem){
-    padding: 4px 0px;
+.submenuContainer 
+.submenuContainerTitle--desktop__megamenu {
+    font-size: var(--parrafos__s14);
+    font-weight: var(--parrafos__w600);
+    color: var(--color__principal);
+    position: absolute;
+    background: #f0f0f0;;
+    bottom: 0;
+    margin-bottom: 0;
+    padding: 6px 36px;
+    right: 0;
+    width: 74.7%;
+    display: flex;
+    justify-content: flex-end;
 }
 
+.submenuContainer 
+.submenuContainerTitle--desktop__megamenu
+.seeAllLinkContainer--desktop__megamenu
+.seeAllLink--desktop__megamenu {
+    display: inline-block;
+    padding: 4px 20px;
+    color: var(--color__white);
+    background: var(--color__principal);
+    text-decoration: none;
+    border-radius: 14px;
+    font-size: var(--parrafos__s12);
+    font-weight: var(--parrafos__w300);
+}
+
+.submenuContainer
+.submenuList
+.submenuItem 
+.styledLinkContainer--desktop__megamenu{
+    font-size: var(--parrafos__s14);
+    font-weight: var(--parrafos__w600);
+    color: var(--color__principal);
+    padding: 2px 0px;
+    text-decoration: none;
+}
+
+.submenuContainer
+.submenuList
+.submenuItem 
+.styledLinkContainer--desktop__megamenu
+.styledLink--desktop__megamenu
+.styledLinkContent--desktop__megamenu 
+.styledLinkText--desktop__megamenu {
+    font-size: var(--parrafos__s14);
+    font-weight: var(--parrafos__w600);
+    color: var(--color__principal);
+    text-decoration: none !important;
+}
+
+.submenuContainer
+.submenuList
+.submenuItem 
+.submenuItem--desktop__megamenu 
+.styledLinkContainer--desktop__megamenu 
+.styledLink--desktop__megamenu 
+.styledLinkContent--desktop__megamenu 
 .styledLinkText--desktop__megamenu{
-    padding-right: 1em;
+    font-size: var(--parrafos__s12);
+    font-weight: var(--parrafos__w300);
+    color: var(--color__principal);
+    padding: 2px 0px;
+    text-decoration: none;
+}
+
+.submenuContainer
+.submenuList
+.submenuItem 
+.seeAllLinkContainer{
+    display: none;
 }

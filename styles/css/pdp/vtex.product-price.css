@@ -1,0 +1,19 @@
+.sellingPrice--pdp__price {
+    font-size: var(--parrafos__s24);
+    font-weight: var(--parrafos__w600);
+    color: var(--color__principal);
+    padding-right: 12px;
+}
+
+.sellingPrice--pdp__price::before{
+    content: 'Now';
+    padding-right: 6px;
+} 
+
+.listPrice--pdp__listprice{
+    font-size: var(--parrafos__s14);
+    font-weight: var(--parrafos__w400);
+    color: var(--color__graytwo);
+    display: flex;
+    align-items: center;
+}

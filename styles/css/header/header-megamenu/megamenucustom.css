@@ -1,0 +1,5 @@
+:global(.vtex-mega-menu-2-x-menuContainer h3){
+    font-size: var( --parrafos__s14);
+    font-weight: var(--parrafos__w600);
+    color: var(--color__principal);
+}
