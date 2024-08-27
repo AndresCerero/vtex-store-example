@@ -1,4 +1,33 @@
 .element--plp__shelf{
     display: flex;
     justify-content: center;
+    padding: 0;
+}
+
+.containerNormal--plp__shelf {
+    border-radius: 0;
+}
+
+.nameContainer--summary__name {
+    padding: 0;
+    max-height: 56px;
+    overflow-y: hidden;
+}
+
+.productBrand--summary__name{
+    font-size: var(--parrafos__s12);
+    font-weight:var(--parrafos__w400);
+    color:var(--color__principal);
+    line-height: 18px;
+    display: inline-block;
+}
+
+.imageContainer--summary__img{
+    height: 7rem;
+    display: flex;
+}
+
+.image--summary__img {
+    object-fit: cover;
+    object-position: center;
 }

@@ -1,0 +1,17 @@
+
+.productHighlightWrapper--plp__highfree--wrapper{
+  display: flex;
+  align-items: center;
+}
+
+.productHighlightText--plp__wrapper--text {
+  color: var(--color__rosado);
+  font-size: var(--parrafos__s12);
+  font-weight: var(--parrafos__w400);
+}
+
+.productHighlightWrapper--plp__highfree--wrapper :global(.vtex-store-icons-0-x-starIcon){
+  margin-left: 0.4rem;
+  height: 16px;
+  width: 16px;
+}

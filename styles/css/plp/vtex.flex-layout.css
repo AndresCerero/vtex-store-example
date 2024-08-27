@@ -1,28 +1,44 @@
-
-.flexRow--desktop__plp :global(.vtex-store-components-3-x-container){
- display: flex;
- justify-content: center;
- padding: 0;
+.flexRow--desktop__plp :global(.vtex-store-components-3-x-container) {
+  display: flex;
+  justify-content: center;
+  padding: 0;
 }
 
-.flexRowContent--desktop__plp{
-    max-width: 1140px;
+.flexRowContent--desktop__plp {
+  max-width: 1140px;
+  margin-bottom: 3rem;
 }
 
-.flexCol--head__two{
-    display: flex;
-    align-items: center;
+.flexCol--head__two {
+  display: flex;
+  justify-content: space-between;
 }
 
-.flexCol--filter__plp{
-    min-width: max-content;
-    margin: 0 4rem 0 0;
+.flexCol--filter__plp {
+  min-width: max-content;
 }
-
 
 /*--------*/
 
-.flexRow--plp__content--shelf{
-    height: 80%;
-    border: 1px solid;
+.flexRow--plp__content--shelf {
+  height: 100%;
+}
+
+.flexRowContent--plp__content--shelf {
+  height: 100%;
+}
+
+.flexRowContent--plp__content--shelf .stretchChildrenWidth:first-child {
+  min-width: 40%;
+  margin-right: 0.6rem;
+}
+
+.flexRowContent--plp__content--shelf .stretchChildrenWidth:last-child {
+  min-width: 60%;
+}
+
+.flexCol--content__shelf--right {
+  text-align: start;
+  display: flex;
+  justify-content: space-evenly;
 }

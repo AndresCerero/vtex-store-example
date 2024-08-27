@@ -1,7 +1,9 @@
 .buttonText--pdp__button--action {
-  text-transform: lowercase;
+  text-transform: math-auto;
   display: flex;
   align-items: center;
+  font-size: var( --parrafos__s14);
+  font-weight: var(--parrafos__w400);
 }
 
 .buttonText--pdp__button--action::before {
@@ -9,6 +11,7 @@
   display: inline-block;
   width: 20px;
   height: 20px;
-  background: url("assets/img/add_shopping_cart.svg") no-repeat center center / cover;
+  background: url(assets/img/add_shopping_cart.svg) no-repeat center center / cover;
   margin-right: 1rem;
 }
+

@@ -1,3 +1,6 @@
+
+/*--Free--*/
+
 .productHighlightWrapper--summary__highfree--wrapper {
     margin-right: 2px;
     display: flex;
@@ -8,4 +11,13 @@
 
 .productHighlightText--highfree__wrapper--text {
     margin-right: 6px;
+    font-size: var(--parrafos__s14);
+    font-weight: var(--parrafos__w400);
+}
+
+/*--Offer--*/
+
+.productHighlightText--stack__highoffer--text{
+    font-size: var(--parrafos__s14);
+    font-weight: var(--parrafos__w400);
 }

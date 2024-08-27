@@ -60,32 +60,33 @@
   },
   "total-products.v2": {
     "props": {
-      "blocksClass": ["plp__totalproducts"]
+      "blocksClass": "plp__totalproducts"
     }
   },
   "search-title.v2": {
     "props": {
-      "blocksClass": ["plp__title"]
+      "blocksClass": "plp__title"
     }
   },
   "order-by.v2": {
     "props": {
-      "blocksClass": ["plp__filterorder"]
+      "blocksClass": "plp__filterorder"
     }
   },
   "filter-navigator.v3": {
     "props": {
-      "blocksClass": ["plp__filter"]
+      "blocksClass": "plp__filter"
     }
   },
   "breadcrumb.search": {
     "props": {
-      "showOnMobile": true
+      "showOnMobile": true,
+      "blocksClass": "plp__breadcrumb"
     }
   },
   "search-products-count-per-page": {
     "props": {
-      "blocksClass": ["plp__countproducts"]
+      "blocksClass": "plp__countproducts"
     }
   }
 }

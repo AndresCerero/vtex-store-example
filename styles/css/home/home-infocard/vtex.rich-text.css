@@ -1,0 +1,8 @@
+.container--home__infocard--title{
+    padding: 0.4rem 0rem 0.4rem 0rem;
+}
+
+.paragraph--home__infocard--title{
+    font-size: var(--parrafos__s16) ;
+    font-weight: var(--parrafos__w600);  
+}
