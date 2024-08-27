@@ -25,10 +25,24 @@
   top: 0px;
 }
 
+.closeIcon{
+  background: #F5F4F6;
+  padding: 0.4rem;
+  border-radius: 50%;
+}
+
 .minicartTitle {
   margin-top: 16%;
   padding: 0px 16px;
+  font-size: 0;
 }
+
+.minicartTitle::before{
+  content: "Resumen de tu compra";
+  font-size: 14px;
+  font-weight: 600;
+}
+
 /*--ProductList--*/
 
 .minicartProductListContainer {
@@ -62,9 +76,18 @@
   width: 100%;
   border-radius: 60px;
   background: rgba(29, 39, 52, 1);
-  padding: 0.8rem 0rem;
+  padding: 1rem 0rem;
 }
 
 .minicartCheckoutButton--minicard__checkout--btn :global(.vtex-button__label){
   text-transform: math-auto;
+  font-size: 0;
+}
+
+
+.minicartCheckoutButton--minicard__checkout--btn :global(.vtex-button__label)::before{
+  content: "Finalizar tu compra";
+  text-transform: math-auto;
+  font-size: 14px;
+  font-weight: 400;
 }

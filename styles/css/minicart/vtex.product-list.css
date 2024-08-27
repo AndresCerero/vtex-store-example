@@ -1,4 +1,57 @@
+/*________|Minicart|Img|_____*/
+
+
+.productImageContainer--minicart__img {
+    width: unset !important;
+    min-width: 100%;
+}
+
+.productImageAnchor--minicart__img{
+    display: flex;
+}
+
+
+.productImage--minicart__img{
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 1 / 1;
+}
+
+/*________|Minicart|Nameproduct|_____*/
+
+.productName--minicart__nameproduct{
+    font-size: var(--parrafos__s12);
+    font-size: 12px;
+    font-weight: var(--parrafos__w300);
+    font-weight: 300;
+    color: var(--color__principal);
+    color: #1D2734 ;
+    max-height: 56px;
+    overflow: hidden;
+}
+
+/*__________|Minicart|PriceCurrency|______________*/
+
+.productPriceCurrency--minicart__price{
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(29, 39, 52, 0.4) ;
+}
+
+
+/*__________|Minicart|ProductPrice|______________*/
+
+.productPrice--minicart__price{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(29, 39, 52) ;
+}
+
 /*---|Quantity|Botones|----*/
+
+.quantitySelectorContainer--quantity__selector .inputContainer{
+    flex-shrink: unset;
+}
 
 .quantitySelectorContainer--quantity__selector{
     width: 100%;

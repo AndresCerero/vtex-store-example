@@ -14,20 +14,23 @@
     ],
     "props": {
       "blockClass": "list__row--mobile",
-      "fullWidth": true,
-      "paddingBottom": "6",
-      "paddingTop": "5",
       "colSizing": "auto",
-      "preserveLayoutOnMobile": "true"
+      "preserveLayoutOnMobile": true
     }
   },
 
   //|Product|Img|
   "flex-layout.col#image__mobile": {
-    "children": ["product-list-image"],
+    "children": ["product-list-image#minicart__img"],
     "props": {
       "blockClass":"image__mobile",
-      "marginRight": "5"
+      "width": "40%"
+    }
+  },
+
+  "product-list-image#minicart__img":{
+    "props": {
+      "blockClass":"minicart__img"
     }
   },
 
@@ -39,20 +42,27 @@
       "flex-layout.row#quantity__selector--mobile"
     ],
     "props": {
-      "width": "grow",
-      "blockClass":"main__container--mobile"
+      "blockClass":"main__container--mobile",
+      "preventVerticalStretch": true,
+      "width": "40%"
     }
   },
 
   //|RowTop|Name|RemoveButton|
   "flex-layout.row#top__mobile": {
     "children": [
-      "vtex.product-list:product-name"
+      "vtex.product-list:product-name#minicart__nameproduct"
     ],
     "props": {
-      "colSizing": "auto",
-      "preserveLayoutOnMobile": "true",
       "blockClass": "top__mobile"
+    }
+  },
+
+  /*________|Minicart|Nameproduct|_____*/
+
+  "vtex.product-list:product-name#minicart__nameproduct":{
+    "props":{
+      "blockClass": "minicart__nameproduct"
     }
   },
 
@@ -61,7 +71,7 @@
     "children": ["remove-button"],
     "props": {
       "blockClass":"remove__button--mobile",
-      "marginLeft": "3"
+      "width": "10%"
     }
   },
 
@@ -70,7 +80,7 @@
     "children": ["quantity-selector#quantity__selector"],
     "props": {
       "blockClass": "quantity__selector--mobile",
-      "marginTop": "2"
+      "fullWidth":true
     }
   },
   "quantity-selector#quantity__selector": {
@@ -82,16 +92,17 @@
 
   //|Product|Price|
   "flex-layout.row#price__mobile": {
-    "children": ["price"],
+    "children": ["price#minicart__price"],
     "props": {
       "blockClass": "price__mobile",
-      "marginTop": "5",
-      "preventHorizontalStretch": "true"
+      "preventHorizontalStretch": true,
+      "fullWidth":true
     }
   },
-  "price": {
+  "price#minicart__price": {
     "props": {
-      "textAlign": "left"
+      "textAlign": "left",
+      "blockClass": "minicart__price"
     }
   }
 }

@@ -1,10 +1,15 @@
 {
   "sticky-layout#mobile__header": {
-    "children": ["flex-layout.row#mobile__header"],
+    "children": [
+      "flex-layout.row#mobile__header"
+    ],
     "props": {
       "blockClass": "mobile__header"
     }
   },
+
+
+
   "flex-layout.row#mobile__header": {
     "children": [
       "flex-layout.row#mobile__header--left",
@@ -17,6 +22,7 @@
       "fullWidth": true
     }
   },
+
   "flex-layout.row#mobile__header--left": {
     "children": [
       "flex-layout.col#mobile__header--megamenu",
@@ -27,6 +33,7 @@
       "colSizing":"auto"
     }
   },
+
   "flex-layout.row#mobile__header--right": {
     "children": [
       "flex-layout.col#desktop__header--searchbar",

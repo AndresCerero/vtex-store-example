@@ -1,77 +1,25 @@
 {
-  "flex-layout.row#desktop__plp": {
-    "children": ["flex-layout.col#container__plp"],
+  "breadcrumb.search": {
     "props": {
-      "blockClass": "desktop__plp"
+      "showOnMobile": true,
+      "blocksClass": "plp__breadcrumb"
     }
   },
-
-  "flex-layout.col#container__plp": {
-    "children": ["flex-layout.row#head__plp", "flex-layout.row#body__plp"],
+  "search-title.v2": {
     "props": {
-      "blockClass": "container__plp"
+      "blocksClass": "plp__title"
     }
   },
-
-  "flex-layout.row#head__plp": {
-    "children": ["flex-layout.col#one", "flex-layout.col#two"],
+  "total-products.v2": {
     "props": {
-      "blockClass": "head__plp",
-      "colSizing": "auto",
-      "fullWidth": true
+      "blocksClass": "plp__totalproducts"
     }
   },
-
-  "flex-layout.col#one": {
-    "children": ["breadcrumb.search", "search-title.v2", "total-products.v2"],
+  "order-by.v2": {
     "props": {
-      "blockClass": "head__one"
+      "blocksClass": "plp__filterorder"
     }
   },
-
-  "flex-layout.col#two": {
-    "children": ["order-by.v2", "gallery-layout-switcher"],
-    "props": {
-      "blockClass": "head__two",
-      "preventVerticalStretch": true
-    }
-  },
-
-  "flex-layout.row#body__plp": {
-    "children": ["flex-layout.col#filter__plp", "flex-layout.col#gallery__plp"],
-    "props": {
-      "blockClass": "body__plp",
-      "colSizing": "auto"
-    }
-  },
-
-  "flex-layout.col#filter__plp": {
-    "children": ["filter-navigator.v3"],
-    "props": {
-      "blockClass": "filter__plp"
-    }
-  },
-
-  "flex-layout.col#gallery__plp": {
-    "children": [
-      "search-content#plp",
-      "search-products-count-per-page",
-      "search-fetch-more"
-    ],
-    "props": {
-      "blockClass": "gallery__plp"
-    }
-  },
-
-  //
-  "search-content#plp": {
-    "blocks": [
-      "gallery",
-      "not-found"
-    ]
-  },
-
-  //
   "gallery-layout-switcher": {
     "children": [
       //It follows the same whole -> two -> many order
@@ -82,10 +30,26 @@
     "props": {
       "blockClass": "gallery__switcher"
     }
-  },  
-  "search-fetch-more": {
+  },
+  "filter-navigator.v3": {
     "props": {
-      "blockClass": ""
+      "blocksClass": "plp__filter"
+    }
+  },
+  "search-content#plp__search": {
+    "blocks": [
+        "gallery",
+        "not-found"
+    ]
+  },
+  "search-products-count-per-page#plp__countproducts": {
+    "props": {
+      "blockClass": "plp__countproducts"
+    }
+  },
+  "search-fetch-more#plp__fetchmore": {
+    "props": {
+      "blockClass": "plp__fetchmore"
     }
   }
 }

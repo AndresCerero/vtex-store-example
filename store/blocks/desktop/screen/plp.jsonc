@@ -1,5 +1,5 @@
 {
-    "search-result-layout.desktop": {
+  "search-result-layout.desktop": {
     "children": ["flex-layout.row#desktop__plp"]
   }
 }
