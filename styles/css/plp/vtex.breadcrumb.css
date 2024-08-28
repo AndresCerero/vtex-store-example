@@ -1,4 +1,5 @@
 .container{
     font-size: var(--parrafos__s14);
     font-weight: var(--parrafos__w400);
+    padding: 0;
 }

@@ -33,7 +33,10 @@
   },
   "filter-navigator.v3": {
     "props": {
-      "blocksClass": "plp__filter"
+      "blocksClass": "plp__filter",
+      "navigationTypeOnMobile": "collapsible",
+      "initiallyCollapsed":true,
+      "openFiltersMode":"one"
     }
   },
   "search-content#plp__search": {
@@ -49,7 +52,9 @@
   },
   "search-fetch-more#plp__fetchmore": {
     "props": {
-      "blockClass": "plp__fetchmore"
+      "blockClass": "plp__fetchmore",
+      "text": "Ver",
+      "buyButtonText":"Ver"
     }
   }
 }

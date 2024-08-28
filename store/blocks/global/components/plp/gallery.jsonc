@@ -47,9 +47,8 @@
   "flex-layout.row#plp__content--shelf": {
     "props": {
       "colSizing": "auto",
-      //"preventVerticalStretch":true,
-      //"preventHorizontalStretch":true,
-      "blockClass": "plp__content--shelf"
+      "blockClass": "plp__content--shelf",
+      "preserveLayoutOnMobile":true
     },
     "children": [
       "flex-layout.col#content__shelf--left",

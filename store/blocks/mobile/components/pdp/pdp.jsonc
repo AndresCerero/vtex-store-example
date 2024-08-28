@@ -27,6 +27,7 @@
     "props": {
       "blockClass": ["view--pdp__top"],
       "width": "grow"
+      //"preserveLayoutOnMobile":true
     },
     "children": [
       "flex-layout.col#mobile--top__left",
@@ -53,7 +54,7 @@
       "vtex.store-components:product-name#pdp__name",
       "flex-layout.row#top__right--price",
       "sku-selector#pdp__skuselector",
-      //"flex-layout.row#top__right--cart",
+      "flex-layout.row#top__right--cart",
       "product-separator",
       "share"
     ]

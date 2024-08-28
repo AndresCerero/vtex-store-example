@@ -3,3 +3,22 @@
    display: flex;
    justify-content: center; 
 }
+
+
+@media (max-width: 639px) {
+   .container--mobile__header{
+      padding-left: .5rem;
+      padding-right: .5rem;
+   }
+ }
+ /* Estilos para tabletas */
+ @media (min-width: 640px) and (max-width: 1025px) {
+   .container--mobile__header{
+      padding-left: .5rem;
+      padding-right: .5rem;
+   }
+ }
+ /* Estilos para escritorios */
+ @media (min-width: 1026px) {
+ }
+

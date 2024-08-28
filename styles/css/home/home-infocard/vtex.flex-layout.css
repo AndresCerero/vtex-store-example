@@ -3,7 +3,6 @@
 }
 
 .flexRow--global__home--infoCard :global(.vtex-store-components-3-x-container){
-    padding: 0;
     display: flex;
     justify-content: center;
 }

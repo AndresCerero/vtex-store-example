@@ -42,24 +42,33 @@
   "flex-layout.row#top__right--cart": {
     "props": {
       "blockClass": "top__right--cart",
-      "fullWidth": true
+      "colSizing": "auto",
+      "fullWidth": true,
+      "preserveLayoutOnMobile": true
     },
-    "children": ["flex-layout.col#pdp__quantity", "flex-layout.col#pdp__button"]
+    "children": [
+      "flex-layout.col#pdp__quantity", 
+      "flex-layout.col#pdp__button"
+    ]
   },
 
   "flex-layout.col#pdp__quantity": {
-    "children": ["product-quantity#pdp_quantity"],
+    "children": [
+      "product-quantity#pdp_quantity"
+    ],
     "props": {
       "blockClass": "pdp__quantity",
-      "width": "30%"
+      "width":"40%"
     }
   },
 
   "flex-layout.col#pdp__button": {
-    "children": ["add-to-cart-button#pdp__button"],
+    "children": [
+      "add-to-cart-button#pdp__button"
+    ],
     "props": {
       "blockClass": "pdp__button",
-      "width": "70%"
+      "width":"60%"
     }
   },
 
