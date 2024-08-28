@@ -1,5 +1,20 @@
 :global(.vtex-mega-menu-2-x-menuContainer h3){
-    font-size: var( --parrafos__s14);
-    font-weight: var(--parrafos__w600);
-    color: var(--color__principal);
+    font-size: 14px;
+    font-weight: 600;
+    color: #1D2734;
+    display: flex;
+    align-items: center;
 }
+
+/* Esta en el my account por que no se puede cargar la  imagen desde un custom css
+
+:global(.vtex-mega-menu-2-x-menuContainer h3::before){
+    content: "";
+    background: url(assets/img/Icon_Color.png) no-repeat center center / cover;
+    display: inline-block;
+    margin-right: 0.4rem;
+    width: 15px;
+    height: 15px;
+}
+    
+*/

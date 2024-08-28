@@ -1,0 +1,8 @@
+{
+    "store.custom#tendencias": {
+        "title": "Global tendencias static",
+        "children": [
+            "flex-layout.row#page__tendecias" 
+        ]
+    }
+}

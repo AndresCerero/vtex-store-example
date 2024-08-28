@@ -1,0 +1,13 @@
+{
+    "flex-layout.row#page__tendecias":{
+        "title": "Page tendecias",
+        "children": [
+            "rich-text#page__tendecias--text"
+        ]
+    },
+    "rich-text#page__tendecias--text": {
+        "props": {
+            "text": "Esto es una page 🚀"
+        }
+    }
+}

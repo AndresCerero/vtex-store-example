@@ -57,36 +57,5 @@
       "search-result-layout.mobile",
       "search-not-found-layout"
     ]
-  },
-  "total-products.v2": {
-    "props": {
-      "blocksClass": "plp__totalproducts"
-    }
-  },
-  "search-title.v2": {
-    "props": {
-      "blocksClass": "plp__title"
-    }
-  },
-  "order-by.v2": {
-    "props": {
-      "blocksClass": "plp__filterorder"
-    }
-  },
-  "filter-navigator.v3": {
-    "props": {
-      "blocksClass": "plp__filter"
-    }
-  },
-  "breadcrumb.search": {
-    "props": {
-      "showOnMobile": true,
-      "blocksClass": "plp__breadcrumb"
-    }
-  },
-  "search-products-count-per-page": {
-    "props": {
-      "blocksClass": "plp__countproducts"
-    }
   }
 }

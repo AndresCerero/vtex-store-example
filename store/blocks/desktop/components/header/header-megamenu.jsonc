@@ -18,7 +18,8 @@
   "mega-menu#header__megamenu": {
     "props": {
       "openOnly": "horizontal",
-      "blockClass": "desktop__megamenu"
+      "blockClass": "desktop__megamenu",
+      "title":"All categories"
     }
   },
 

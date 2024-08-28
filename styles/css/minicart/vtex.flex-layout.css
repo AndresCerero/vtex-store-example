@@ -71,13 +71,20 @@
 .flexColChild--image__mobile {
     display: flex;
     align-items: center;
+    justify-content: center;
     border: 1px solid #E7E7E7;
     border-radius: 8px;
+    overflow: hidden;
 }
 
+/*---|MiniCart|Card|---*/
+.flexRow--list__row--mobile {
+    margin-bottom: 1rem;
+}
 
-/*--Product|name---*/
-.flexRowContent--top__mobile :global(.vtex-product-list-0-x-productName) {
-    max-height: 74px;
-    overflow: hidden;
+/*----|MiniCart|Contenido|-----*/
+
+.flexCol--main__container--mobile{
+    display: flex;
+    justify-content: space-between;
 }

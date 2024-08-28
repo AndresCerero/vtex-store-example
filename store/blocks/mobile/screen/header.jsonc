@@ -1,7 +1,8 @@
 {
   "header-layout.mobile": {
     "children": [
-        "sticky-layout#mobile__header"
+        "sticky-layout#mobile__header",
+        "flex-layout.row#global__header__secondmenu"
     ]
   }
 }

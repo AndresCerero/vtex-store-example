@@ -135,7 +135,7 @@
 .styledLinkContent--desktop__megamenu 
 .styledLinkText--desktop__megamenu {
     font-size: var(--parrafos__s14);
-    font-weight: var(--parrafos__w600);
+    font-weight: var(--parrafos__w600); 
     color: var(--color__principal);
     text-decoration: none !important;
 }
@@ -161,3 +161,10 @@
 .seeAllLinkContainer{
     display: none;
 }
+
+/*
+.menuContainer :local(h3){
+ font-size: 2px;
+}
+
+*/

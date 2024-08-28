@@ -6,8 +6,9 @@
           "name": "gallery__first",
           "component": "OneOrTwoLineSummary",
           "itemsPerRow": {
-            "desktop": 3,
-            "mobile": 1
+            "(min-width:1026px)": 3,
+            "(min-width:640px) and (max-width:1025px)":2,
+            "(max-width:639px)":1
           }
         },
         {
@@ -46,9 +47,8 @@
   "flex-layout.row#plp__content--shelf": {
     "props": {
       "colSizing": "auto",
-      //"preventVerticalStretch":true,
-      //"preventHorizontalStretch":true,
-      "blockClass": "plp__content--shelf"
+      "blockClass": "plp__content--shelf",
+      "preserveLayoutOnMobile":true
     },
     "children": [
       "flex-layout.col#content__shelf--left",
