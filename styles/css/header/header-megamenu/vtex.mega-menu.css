@@ -1,5 +1,8 @@
 @import url(megamenucustom.css);
 
+.triggerContainer {
+    padding: 0;
+}
 
 .triggerButtonIcon--header__megamenu--btntrigger{
     width: 20px ;
