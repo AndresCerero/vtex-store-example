@@ -17,11 +17,6 @@
     position: relative;
 }
 
-
-.flexRowContent--header__container--megamenu :global(.vtex-mega-menu-2-x-triggerContainer) {
-    padding: 0;
-}
-
 /*----Mobile--*/
 
 .flexRowContent--header__mobile--item{

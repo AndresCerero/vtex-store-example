@@ -3,7 +3,9 @@
     "props": {
       "blockClass": "desktop__sticky--header"
     },
-    "children": ["flex-layout.row#desktop__row--header"]
+    "children": [
+      "flex-layout.row#desktop__row--header"
+    ]
   },
 
   "flex-layout.row#desktop__row--header": {

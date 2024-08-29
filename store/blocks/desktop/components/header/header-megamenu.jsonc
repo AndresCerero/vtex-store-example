@@ -12,7 +12,10 @@
       "preventVerticalStretch": true,
       "blockClass": ["header__container--megamenu"]
     },
-    "children": ["mega-menu#header__megamenu", "mega-menu-trigger-btn#header__megamenu--btntrigger"]
+    "children": [
+      "mega-menu#header__megamenu", 
+      "mega-menu-trigger-btn#header__megamenu--btntrigger"
+    ]
   },
 
   "mega-menu#header__megamenu": {
