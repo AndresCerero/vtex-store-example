@@ -1,17 +1,24 @@
 @import url(./logincustom.css);
 
-.portalContainer--view__login :global(.vtex-login-2-x-box){
+.profile{
+    min-width: 90px;
+    max-width: 100px;
+}
+
+.portalContainer--view__login .box {
     position: absolute;
-    top: 73px;
-    right: -102px !important;
+    top: 72px;
+    right: unset !important;
+    left: 50%;
+    transform: translate(-66%, 0%);
     width: 480px;
 }
 
-.portalContainer--view__login :global(.vtex-login-2-x-contentContainer){
+.portalContainer--view__login .contentContainer{
     box-shadow: none;
 }
 
-.portalContainer--view__login :global(.vtex-login-2-x-content){
+.portalContainer--view__login .content{
     background-color: rgba(245, 244, 246, 1);
     border-radius: 0 0 16px 16px;
     padding: 20px;
@@ -26,7 +33,7 @@
     color: rgba(29, 39, 52, 1);
 }
 
-.portalContainer--view__login :global(.vtex-login-2-x-contentForm){
+.portalContainer--view__login .contentForm{
     min-width: 100%;
     position: relative;
 }
@@ -62,16 +69,12 @@
 
 }
 
-.portalContainer--view__login :global(.pa2){
- display: none;
-}
-
-.formFooter{
+.portalContainer--view__login .formFooter{
     border: none;
     display: block;
 }
 
-.backButton {
+.portalContainer--view__login .backButton {
     position: absolute;
     z-index: 69;
     top: 0;
@@ -80,29 +83,86 @@
     align-items: center;
 }
 
-.backButton :global(.vtex-button){
+.portalContainer--view__login .backButton :global(.vtex-button){
     border: none;
 }
 
-.backButton :global(.t-small){
+.portalContainer--view__login .backButton :global(.t-small){
     display: none;
 }
 
-.sendButton{
+.portalContainer--view__login .sendButton{
     min-width: 100%;
 }
 
-.sendButton :global(.vtex-button){
+.portalContainer--view__login .sendButton :global(.vtex-button){
     min-width: 100%;
     color: white;
     background-color: #1D2734;
 }
+
 /*---|Login|E-mail and password|*/
 
-.emailAndPasswordForm :global(.vtex-login-2-x-formLinkContainer){
+.portalContainer--view__login .emailAndPasswordForm .formLinkContainer{
     justify-content: center;
 }
 
-.emailAndPasswordForm :global(.vtex-input__suffix){
+.portalContainer--view__login .emailAndPasswordForm .suffix{
     display: none;
+}
+
+
+/*-----|Logeado|-----*/
+
+.portalWrapper--view__login .accountOptions .accountOptionsSectionTitle{
+    display: none;
+}
+
+
+.portalWrapper--view__login .login__btn--profile,
+.portalWrapper--view__login .login__btn--addresses,
+.portalWrapper--view__login .login__btn--orders,
+.portalWrapper--view__login .login__btn--cards,
+.portalWrapper--view__login .login__btn--authentication
+ {
+    border: 1px solid rgba(29, 39, 52, 1);
+    border-radius: 40px;
+    padding: 10px;
+    min-height: 44px;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(29, 39, 52, 1);
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+
+.portalWrapper--view__login .login__btn--profile:hover,
+.portalWrapper--view__login .login__btn--addresses:hover,
+.portalWrapper--view__login .login__btn--orders:hover,
+.portalWrapper--view__login .login__btn--cards:hover,
+.portalWrapper--view__login .login__btn--authentication:hover {
+   background-color: rgba(29, 39, 52, 1);
+   color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.portalWrapper--view__login .accountOptions :global(.mv2){
+    display: none;
+}
+
+
+.portalWrapper--view__login .accountOptions :global(.mv4:last-child){
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px 0px 0px;
+}
+
+
+.portalWrapper--view__login .accountOptions .logoutButton{
+    font-size: 14px;
+    font-weight: 400;
+    color: #E31616;
 }

@@ -2,17 +2,44 @@
   "login#global__header--login": {
     "props": {
       "iconLabel": "Login", 
-      "optionsTitle": "LOG IN",
+      "optionsTitle": "Log in",
       "emailPlaceholder":"Enter your e-mail",
       "passwordPlaceholder":"Enter your password",
       "accessCodePlaceholder": "Enter your access code",
       //Code by email
       "accessCodeTitle":"Access code by email",
       //E-mail and password
-      "providerPasswordButtonLabel": "password",
       "emailAndPasswordTitle": "Continue with e-mail and password",
+      //
       "blockClass": "view__login",
-      "labelClasses": "login__icon"
+      "labelClasses": "login__icon",
+      "accountOptionLinks": [
+        {
+          "label":"Profile",
+          "path":"/account#/profile",
+          "cssClass": "login__btn--profile"
+        },
+        {
+          "label":"Addresses",
+          "path":"/account#/addresses",
+          "cssClass": "login__btn--addresses"
+        },
+        {
+          "label":"Orders",
+          "path":"/account#/orders",
+          "cssClass": "login__btn--orders"
+        },
+        {
+          "label":"Credit cards",
+          "path":"/account#/cards",
+          "cssClass": "login__btn--cards"
+        },
+        {
+          "label":"Authentication",
+          "path":"/account#/authentication",
+          "cssClass": "login__btn--authentication"
+        }
+      ]
     }
   }
 }
