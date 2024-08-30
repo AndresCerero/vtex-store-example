@@ -1,9 +1,9 @@
 {
-  "responsive-layout.mobile#mobile__pdp": {
-    "props": {
-      "blockClass": "mobile__pdp" 
+  "responsive-layout.tablet#tablet__pdp": {
+    "props": { 
+      "blockClass": "mobile__pdp"
     },
-    "children": ["flex-layout.row#mobile__view--pdp"] 
+    "children": ["flex-layout.row#mobile__view--pdp"]
   },
 
   "flex-layout.row#mobile__view--pdp": {

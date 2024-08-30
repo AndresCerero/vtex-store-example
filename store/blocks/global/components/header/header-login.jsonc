@@ -7,9 +7,9 @@
       "passwordPlaceholder":"Enter your password",
       "accessCodePlaceholder": "Enter your access code",
       //Code by email
-      "accessCodeTitle":"Access code by email",
+      "accessCodeTitle":"Log in",
       //E-mail and password
-      "emailAndPasswordTitle": "Continue with e-mail and password",
+      "emailAndPasswordTitle": "Log in",
       //
       "blockClass": "view__login",
       "labelClasses": "login__icon",

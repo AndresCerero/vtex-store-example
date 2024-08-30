@@ -1,168 +1,377 @@
 @import url(./logincustom.css);
 
-.profile{
-    min-width: 90px;
-    max-width: 100px;
-}
-
 .portalContainer--view__login .box {
-    position: absolute;
-    top: 72px;
-    right: unset !important;
-    left: 50%;
-    transform: translate(-66%, 0%);
-    width: 480px;
+  position: fixed;
+  right: unset !important;
+  left: 50%;
+  top: 122px;
+  transform: translate(32%, 0%);
+  width: 480px;
 }
 
-.portalContainer--view__login .contentContainer{
-    box-shadow: none;
+.portalContainer--view__login .contentContainer {
+  box-shadow: none;
 }
 
-.portalContainer--view__login .content{
-    background-color: rgba(245, 244, 246, 1);
-    border-radius: 0 0 16px 16px;
-    padding: 20px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+.portalContainer--view__login .content {
+  background-color: rgba(245, 244, 246, 1);
+  border-radius: 0 0 16px 16px;
+  padding: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.portalContainer--view__login :global(.vtex-button){
-    background-color: rgba(245, 244, 246, 1);
-    border: 1px solid rgba(29, 39, 52, 1);
-    border-radius: 40px;
-    padding: 10px;
-    color: rgba(29, 39, 52, 1);
+.portalContainer--view__login :global(.vtex-button) {
+  background-color: rgba(245, 244, 246, 1);
+  border: 1px solid rgba(29, 39, 52, 1);
+  border-radius: 40px;
+  padding: 10px;
+  color: rgba(29, 39, 52, 1);
 }
 
-.portalContainer--view__login .contentForm{
-    min-width: 100%;
+.portalContainer--view__login .contentForm {
+  min-width: 100%;
+  position: relative;
+}
+
+/*-----|Login|Options|---*/
+
+.portalContainer--view__login .formTitle{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 300;
+    color: #1d2734;
+    text-transform:uppercase;
+}
+
+/*----|Login|Btn|----*/
+
+.portalContainer--view__login :global(.vtex-button__label){
+    font-size: 14px;
+    font-weight: 400;
+    color: #1d2734;
+    text-transform: math-auto;
+}
+
+/*----|Login|Btn|Google|----*/
+
+.portalContainer--view__login .googleOptionBtn :global(.vtex-button) {
+  background: rgba(255, 255, 255, 1);
+  color: rgba(94, 99, 110, 1);
+  border: 1px solid rgba(174, 186, 206, 0.5);
+}
+
+.portalContainer--view__login .googleOptionBtn :global(.vtex-button__label) {
+  position: relative;
+  font-size: 14px;
+    font-weight: 400;
+    color: #1d2734;
+    text-transform: math-auto;
+}
+
+.portalContainer--view__login  .googleOptionBtn  :global(.vtex-button__label svg) {
+  position: absolute;
+  left: 0;
+  height: 26px;
+    width: 26px;
+ padding: 0.6rem;
+}
+
+.portalContainer--view__login  .googleOptionBtn   .oauthLabel {
+    font-size: 14px;
+    font-weight: 400;
+    color:#1d2734;
+    text-transform: math-auto; 
+  }
+
+  .portalContainer--view__login  .googleOptionBtn   .oauthLabel .oauthProvider {
+    font-size: 14px;
+    font-weight: 400;
+    color:#1d2734;
+    text-transform: math-auto; 
+  }
+
+
+
+/*----|Login|Btn|Facebook|----*/
+
+.portalContainer--view__login .facebookOptionBtn :global(.vtex-button) {
+  background: rgba(24, 119, 242, 1);
+  color: rgb(255, 255, 255);
+  border: none;
+}
+
+.portalContainer--view__login .facebookOptionBtn :global(.vtex-button__label) {
     position: relative;
-}
+    font-size: 14px;
+    font-weight: 400;
+    color: #1d2734;
+    text-transform: math-auto;
+  }
+  
+  .portalContainer--view__login  .facebookOptionBtn  :global(.vtex-button__label svg) {
+    position: absolute;
+    left: 0;
+    height: 26px;
+    width: 26px;
+    padding: 0.6rem;
+  }
 
-.googleOptionBtn :global(.vtex-button){
-    background: rgba(255, 255, 255, 1);
-    color: rgba(94, 99, 110, 1);
-    border: none;
-}
 
-.facebookOptionBtn :global(.vtex-button){
-    background: rgba(24, 119, 242, 1);
-    color: rgb(255, 255, 255);
-    border: none;
-}
+  .portalContainer--view__login  .facebookOptionBtn  .oauthLabel {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    text-transform: math-auto;
+  }
+
+  .portalContainer--view__login  .facebookOptionBtn   .oauthLabel .oauthProvider {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    text-transform: math-auto; 
+  }
 
 .arrowUp {
-    display: none;
+  display: none;
 }
 
+/*--| login | Access Code |--*/
 
-/*--Access Code--*/
-
-.portalContainer--view__login :global(.vtex-input-prefix__group){
-    border: 1px solid rgba(29, 39, 52, 1);
-    border-radius: 40px;
-    padding: 10px;
-    min-height: 44px;
+.portalContainer--view__login :global(.vtex-input-prefix__group) {
+  border: 1px solid rgba(29, 39, 52, 1);
+  border-radius: 40px;
+  padding: 10px;
+  min-height: 44px;
 }
 
-.portalContainer--view__login :global(.vtex-styleguide-9-x-hideDecorators){
-    background: transparent;
-
+.portalContainer--view__login :global(.vtex-styleguide-9-x-hideDecorators) {
+  background: transparent;
 }
 
-.portalContainer--view__login .formFooter{
-    border: none;
-    display: block;
+.portalContainer--view__login .formFooter {
+  border: none;
+  display: block;
+  margin: 0;
+  padding: 0;
 }
+
+.content--emailVerification .emailVerification .formTitle{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 4.4rem;
+  padding-bottom: 1.2rem;
+}
+
+.content--emailVerification .emailVerification .formTitle::after {
+  content: 'Receive access code by email';
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: math-auto;
+}
+
+.content--emailVerification .emailVerification .sendButton{
+  font-size: 14px;
+  font-weight: 400;
+  padding: 1rem 0rem;
+  color: #ffffff;
+  text-transform: math-auto;
+}
+
+.content--emailVerification .emailVerification .sendButton :global(.vtex-button__label){
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: math-auto;
+}
+
+/*-----|Login|ArrowBack|----*/
 
 .portalContainer--view__login .backButton {
-    position: absolute;
-    z-index: 69;
-    top: 0;
-    min-height: 58px;
-    display: flex;
-    align-items: center;
+  position: absolute;
+  z-index: 69;
+  top: 0;
+  display: flex;
+  align-items: center;
 }
 
-.portalContainer--view__login .backButton :global(.vtex-button){
+.portalContainer--view__login .arrowBackIcon--view__login{
+width: 26px;
+height: 26px;
+}
+
+.portalContainer--view__login .backButton :global(.vtex-button) {
+  border: none;
+  padding: 0;
+}
+
+.portalContainer--view__login .backButton :global(.vtex-button__label) {
     border: none;
+    padding: 0;
+  }
+
+  .portalContainer--view__login .backButton :global(.vtex-button__label .items-center) {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+
+.portalContainer--view__login .backButton :global(.t-small) {
+  display: none;
 }
 
-.portalContainer--view__login .backButton :global(.t-small){
-    display: none;
+.portalContainer--view__login .sendButton {
+  min-width: 100%;
 }
 
-.portalContainer--view__login .sendButton{
-    min-width: 100%;
-}
-
-.portalContainer--view__login .sendButton :global(.vtex-button){
-    min-width: 100%;
-    color: white;
-    background-color: #1D2734;
+.portalContainer--view__login .sendButton :global(.vtex-button) {
+  min-width: 100%;
+  color: white;
+  background-color: #1d2734;
 }
 
 /*---|Login|E-mail and password|*/
 
-.portalContainer--view__login .emailAndPasswordForm .formLinkContainer{
-    justify-content: center;
+.portalContainer--view__login .emailAndPasswordForm .formLinkContainer {
+  justify-content: center;
 }
 
-.portalContainer--view__login .emailAndPasswordForm .suffix{
-    display: none;
+.portalContainer--view__login .emailAndPasswordForm :global(.vtex-input__suffix) {
+  display: none;
 }
 
+.content--emailAndPassword .emailVerification .formTitle{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 4.4rem;
+  padding-bottom: 1.2rem;
+}
+
+.content--emailAndPassword .emailVerification .formTitle::after {
+  content: 'Continue with e-mail and password';
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: math-auto;
+}
+
+.content--emailAndPassword .emailVerification .sendButton {
+ padding: 1rem 0rem;
+}
+
+.content--emailAndPassword .emailVerification .sendButton :global(.vtex-button__label){
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: math-auto;
+}
+
+.content--emailAndPassword .emailVerification .inputContainerPassword {
+  padding: 1rem 0rem;
+}
+
+.content--emailAndPassword .emailVerification .inputContainerPassword :global(.relative){
+  display: flex;
+  flex-direction: column-reverse; 
+}
+
+.content--emailAndPassword .emailVerification .inputContainerPassword :global(.pa2){
+  padding-bottom: 1rem;
+}
+
+.content--emailAndPassword .emailVerification .inputContainerPassword :global(.t-small){
+  font-size: 12px;
+  font-weight: 300;
+  color: #1d2734; 
+}
+
+.content--emailAndPassword .emailVerification .forgotPasswordLink {
+  font-size: 14px;
+  font-weight: 300;
+  color: #1d2734;
+}
+
+.content--emailAndPassword .emailVerification .dontHaveAccount{
+  font-size: 14px;
+  font-weight: 300;
+  color: #1d2734;
+}
+
+
+/*-----|Olvide mi contraseña|---*/
+
+.content--beginCreatePass .emailVerification .formTitle{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 4.4rem;
+  padding-bottom: 1.2rem;
+}
+
+.content--beginCreatePass .emailVerification .formTitle::after {
+  content: 'Continue with e-mail and password';
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: math-auto;
+}
+
+.content--beginCreatePass .emailVerification .sendButton {
+ padding: 1rem 0rem;
+}
+
+.content--beginCreatePass .emailVerification .sendButton :global(.vtex-button__label){
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: math-auto;
+}
 
 /*-----|Logeado|-----*/
 
-.portalWrapper--view__login .accountOptions .accountOptionsSectionTitle{
-    display: none;
+.portalWrapper--view__login .accountOptions .accountOptionsSectionTitle {
+  display: none;
 }
-
 
 .portalWrapper--view__login .login__btn--profile,
 .portalWrapper--view__login .login__btn--addresses,
 .portalWrapper--view__login .login__btn--orders,
 .portalWrapper--view__login .login__btn--cards,
-.portalWrapper--view__login .login__btn--authentication
- {
-    border: 1px solid rgba(29, 39, 52, 1);
-    border-radius: 40px;
-    padding: 10px;
-    min-height: 44px;
-    font-size: 14px;
-    font-weight: 400;
-    color: rgba(29, 39, 52, 1);
-    text-align: center;
-    line-height: 1.6;
-    margin-bottom: 8px;
+.portalWrapper--view__login .login__btn--authentication {
+  border: 1px solid rgba(29, 39, 52, 1);
+  border-radius: 40px;
+  padding: 10px;
+  min-height: 44px;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(29, 39, 52, 1);
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 8px;
 }
-
 
 .portalWrapper--view__login .login__btn--profile:hover,
 .portalWrapper--view__login .login__btn--addresses:hover,
 .portalWrapper--view__login .login__btn--orders:hover,
 .portalWrapper--view__login .login__btn--cards:hover,
 .portalWrapper--view__login .login__btn--authentication:hover {
-   background-color: rgba(29, 39, 52, 1);
-   color: white;
-    font-size: 14px;
-    font-weight: 400;
+  background-color: rgba(29, 39, 52, 1);
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
 }
 
-.portalWrapper--view__login .accountOptions :global(.mv2){
-    display: none;
+.portalWrapper--view__login .accountOptions :global(.mv2) {
+  display: none;
 }
 
-
-.portalWrapper--view__login .accountOptions :global(.mv4:last-child){
-    display: flex;
-    justify-content: center;
-    margin: 20px 0px 0px 0px;
+.portalWrapper--view__login .accountOptions :global(.mv4:last-child) {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px 0px 0px;
 }
 
-
-.portalWrapper--view__login .accountOptions .logoutButton{
-    font-size: 14px;
-    font-weight: 400;
-    color: #E31616;
+.portalWrapper--view__login .accountOptions .logoutButton {
+  font-size: 14px;
+  font-weight: 400;
+  color: #e31616;
 }
