@@ -1,69 +1,125 @@
-.productNameContainer--pdp__name{
-    font-size: var(--parrafos__w300);
-    font-weight: var(--parrafos__s16);
-    color: var(--color__principal);
-    line-height: 1.8;
+.productImagesGallerySwiperContainer--pdp__images {
+  border-radius: 10px;
+  outline: 1px solid #e7e7e7;
+  overflow: hidden;
+}
+
+.productImagesThumb--pdp__images {
+  outline: 1px solid #e7e7e7;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.productNameContainer--pdp__name {
+  font-size: var(--parrafos__w300);
+  font-weight: var(--parrafos__s16);
+  color: var(--color__principal);
+  line-height: 1.8;
 }
 
 .skuSelectorContainer--pdp__skuselector {
-    display: flex;
-    flex-direction: column-reverse;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
-.skuSelectorContainer--pdp__skuselector .skuSelectorSubcontainer{
-    margin-bottom: 0;
-}  
-
-.skuSelectorContainer--pdp__skuselector .skuSelectorSubcontainer--color{
-    margin: 1rem 0rem;
+.skuSelectorContainer--pdp__skuselector .skuSelectorSubcontainer {
+  margin-bottom: 0;
 }
 
-.skuSelectorContainer--pdp__skuselector .skuSelectorSubcontainer--color .skuSelectorNameContainer .skuSelectorName{
-    font-size:var(--parrafos__s16) ;
-    font-weight: var(--parrafos__w600);
-    color: var(--color__principal);
-    
+.skuSelectorContainer--pdp__skuselector .skuSelectorSubcontainer--color {
+  margin: 1rem 0rem;
 }
 
-.skuSelectorContainer--pdp__skuselector .skuSelectorSubcontainer--color .skuSelectorOptionsList{
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 1rem;
-    margin: 0;
+.skuSelectorContainer--pdp__skuselector
+  .skuSelectorSubcontainer--color
+  .skuSelectorNameContainer
+  .skuSelectorName {
+  font-size: var(--parrafos__s16);
+  font-weight: var(--parrafos__w600);
+  color: var(--color__principal);
 }
 
-.skuSelectorContainer--pdp__skuselector .skuSelectorSubcontainer--color .skuSelectorItem {
-    width: 100%;
-    height: 100%;
+.skuSelectorContainer--pdp__skuselector
+  .skuSelectorSubcontainer--color
+  .skuSelectorOptionsList {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+  margin: 0;
 }
 
-.skuSelectorContainer--pdp__skuselector .skuSelectorSubcontainer--color .valueWrapper--pdp__skuselector{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+.skuSelectorContainer--pdp__skuselector
+  .skuSelectorSubcontainer--color
+  .skuSelectorItem {
+  width: 100%;
+  height: 100%;
 }
 
-.skuSelectorContainer--pdp__skuselector .skuSelectorSubcontainer--talla .skuSelectorOptionsList{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-    margin-left: 0;
+.skuSelectorContainer--pdp__skuselector
+  .skuSelectorSubcontainer--color
+  .valueWrapper--pdp__skuselector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
-
-.skuSelectorContainer--pdp__skuselector .skuSelectorSubcontainer--talla .skuSelectorTextContainer .skuSelectorName{
-    font-size:var(--parrafos__s16) ;
-    font-weight: var(--parrafos__w600);
-    color: var(--color__principal);
+.skuSelectorContainer--pdp__skuselector
+  .skuSelectorSubcontainer--talla
+  .skuSelectorOptionsList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-left: 0;
 }
 
-.skuSelectorContainer--pdp__skuselector .skuSelectorSubcontainer--talla .skuSelectorItem {
-    width: 100%;
-    height: 3rem;
+.skuSelectorContainer--pdp__skuselector
+  .skuSelectorSubcontainer--talla
+  .skuSelectorTextContainer
+  .skuSelectorName {
+  font-size: var(--parrafos__s16);
+  font-weight: var(--parrafos__w600);
+  color: var(--color__principal);
 }
 
-.skuSelectorInternalBox--pdp__skuselector .valueWrapper--pdp__skuselector{
-    font-size: var(--parrafos__w400);
-    font-weight: var(--parrafos__s14);
+.skuSelectorContainer--pdp__skuselector
+  .skuSelectorSubcontainer--talla
+  .skuSelectorItem {
+  width: 100%;
+  height: 3rem;
+}
+
+.skuSelectorInternalBox--pdp__skuselector {
+  border: 2px solid;
+}
+
+.skuSelectorInternalBox--pdp__skuselector .valueWrapper--pdp__skuselector {
+  font-size: var(--parrafos__w400);
+  font-weight: var(--parrafos__s14);
+  color: var(--color__principal);
+}
+
+/* Estilos para mobile */
+@media (max-width: 639px) {
+
+  .productImagesGallerySwiperContainer--pdp__images {
+    outline: none;
+}
+  
+  .carouselGaleryThumbs {
+    display: block;
+    margin-right: 1rem;
+  }
+
+  .productImagesThumbActive--pdp__images{
+    margin-right: 1rem;
+  }   
+}
+
+/* Estilos para tabletas */
+@media (min-width: 640px) and (max-width: 1025px) {
+}
+
+/* Estilos para escritorios */
+@media (min-width: 1026px) {
 }

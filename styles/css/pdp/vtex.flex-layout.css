@@ -65,10 +65,18 @@
 
 /* Estilos para mobile */
 @media (max-width: 639px) {
+  .flexCol--pdp--top__left {
+    box-sizing: border-box;
+    padding-right: 0rem;
+  }
 }
 
 /* Estilos para tabletas */
 @media (min-width: 640px) and (max-width: 1025px) {
+  .flexCol--pdp--top__left {
+    box-sizing: border-box;
+    padding-right: 1rem;
+  }
 }
 
 /* Estilos para escritorios */
