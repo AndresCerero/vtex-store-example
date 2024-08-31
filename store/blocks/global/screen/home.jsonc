@@ -3,6 +3,8 @@
     "blocks": [
       "flex-layout.row#global__home--slider",
       "flex-layout.row#global__home--infoCard",
+      "flex-layout.row#global__home--shelf",
+      "flex-layout.row#global__home--infoCard",
       "flex-layout.row#global__home--shelf"
     ]
   }  

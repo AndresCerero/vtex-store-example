@@ -1,6 +1,6 @@
 .productImagesGallerySwiperContainer--pdp__images {
   border-radius: 10px;
-  outline: 1px solid #e7e7e7;
+  border: 1px solid #e7e7e7;
   overflow: hidden;
 }
 
@@ -103,17 +103,27 @@
 @media (max-width: 639px) {
 
   .productImagesGallerySwiperContainer--pdp__images {
-    outline: none;
+    border: none;
 }
-  
   .carouselGaleryThumbs {
     display: block;
     margin-right: 1rem;
   }
 
-  .productImagesThumbActive--pdp__images{
+  .productImagesThumb--pdp__images{
     margin-right: 1rem;
   }   
+}
+
+.figure--pdp__images{
+  height: 100%;
+}
+
+.thumbImg--pdp__images {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* Estilos para tabletas */

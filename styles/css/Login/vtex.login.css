@@ -131,12 +131,6 @@
     text-transform: math-auto; 
   }
 
-.arrowUp {
-  display: none;
-}
-
-/*--| login | Access Code |--*/
-
 .portalContainer--view__login :global(.vtex-input-prefix__group) {
   border: 1px solid rgba(29, 39, 52, 1);
   border-radius: 40px;
@@ -144,9 +138,19 @@
   min-height: 44px;
 }
 
-.portalContainer--view__login :global(.vtex-styleguide-9-x-hideDecorators) {
+.portalContainer--view__login :global(.vtex-styleguide-9-x-input) {
   background: transparent;
 }
+
+.portalContainer--view__login :global(.vtex-styleguide-9-x-input::placeholder) {
+  background: transparent;
+  font-size: 14px ;
+  font-weight: 400 ;
+  color: #1d2734;
+  font-family: "Lexend";
+}
+
+/*--| login | Access Code |--*/
 
 .portalContainer--view__login .formFooter {
   border: none;
@@ -154,6 +158,10 @@
   margin: 0;
   padding: 0;
 }
+
+.portalContainer--view__login  .formError {
+  background-color: transparent;
+} 
 
 .content--emailVerification .emailVerification .formTitle{
   display: flex;
@@ -184,6 +192,11 @@
   color: #ffffff;
   text-transform: math-auto;
 }
+
+  /*--|Text ArrowBack|-*/
+  .arrowUp {
+    display: none;
+  }
 
 /*-----|Login|ArrowBack|----*/
 
@@ -324,6 +337,75 @@ height: 26px;
   font-weight: 400;
   color: #ffffff;
   text-transform: math-auto;
+}
+
+/*-----|Code confirmation|------*/
+
+.content--codeConfirmation .codeConfirmation .formTitle{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 4.4rem;
+  padding-bottom: 1.2rem;
+}
+
+.content--codeConfirmation .codeConfirmation .formTitle::after {
+  content: 'Enter the access code we sent to your E-mail';
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: math-auto;
+}
+
+.content--codeConfirmation .codeConfirmation .sendButton {
+ padding: 1rem 0rem;
+}
+
+.content--codeConfirmation .codeConfirmation .sendButton :global(.vtex-button__label){
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: math-auto;
+}
+
+
+/*------|RevoryPassword|-----*/
+
+
+.content--recoveryPassword .emailVerification .formTitle{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 1.2rem;
+}
+
+.content--recoveryPassword .emailVerification .sendButton {
+ padding: 1rem 0rem;
+}
+
+.content--recoveryPassword .emailVerification .sendButton :global(.vtex-button__label){
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: math-auto;
+}
+
+.content--recoveryPassword  .emailVerification .inputContainerPassword :global(.relative){
+  display: flex;
+  flex-direction: column-reverse; 
+}
+
+.content--recoveryPassword .emailVerification .inputContainerPassword :global(.pa2){
+  padding-bottom: 1rem;
+}
+
+.content--recoveryPassword .emailVerification .inputContainerPassword :global(.t-small){
+  font-size: 12px;
+  font-weight: 300;
+  color: #1d2734; 
+}
+
+.portalContainer--view__login .emailVerification :global(.vtex-input__suffix) {
+  display: none;
 }
 
 /*-----|Logeado|-----*/

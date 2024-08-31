@@ -1,0 +1,22 @@
+.container--minicart__empty--textone {
+    display: flex;
+    justify-content: center;
+    } 
+    
+
+.container--minicart__empty--texttwo {
+display: flex;
+justify-content: center;
+} 
+
+.paragraph--minicart__empty--textone{
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+}
+
+.paragraph--minicart__empty--texttwo {
+    font-size: 12px;
+    font-weight: 300;
+    margin: 0;
+}

@@ -1,5 +1,4 @@
 {
-
   "flex-layout.col#desktop__header--minicart": {
     "props": {
       "blockClass": ["desktop__header--minicart"]
@@ -13,7 +12,8 @@
     },
     "children": [
       "flex-layout.row#minicard__logo",
-      "minicart-base-content#minicart__content"]
+      "minicart-base-content#minicart__content"
+    ]
   },
 
   "icon-cart#minicart__icon": {
@@ -58,7 +58,7 @@
 
   "flex-layout.col#minicart__footer--content": {
     "children": [
-      "minicart-summary#minicart__summary", 
+      "minicart-summary#minicart__summary",
       "minicart-checkout-button#minicard__checkout--btn"
     ],
     "props": {
@@ -76,14 +76,14 @@
 
   "minicart-product-list#minicart__product--list": {
     "blocks": ["product-list#minicart__product--content"],
-    "props":{
+    "props": {
       "blockClass": "minicart__product--list"
     }
   },
 
   "product-list#minicart__product--content": {
     "blocks": ["product-list-content-mobile"],
-    "props":{
+    "props": {
       "blockClass": "minicart__product--content"
     }
   },
@@ -130,23 +130,24 @@
   },
 
   "flex-layout.row#minicart__empty--state": {
-    "children": ["flex-layout.col#minicart__empty"],
+    "children": [
+      "flex-layout.col#minicart__empty",
+      "flex-layout.row#minicart__footer"
+    ],
     "props": {
-      "blockClass": "minicart__empty--state"
+      "blockClass": "minicart__empty--state",
+      "colSizing": "auto"
     }
   },
 
   "flex-layout.col#minicart__empty": {
     "children": [
       "image#minicart__empty--img",
-      "rich-text#minicart__empty--textone",
-      "rich-text#minicart__empty--texttwo",
-      "flex-layout.row#minicart__footer"
+      "flex-layout.row#minicart__empty--text"
     ],
     "props": {
       "horizontalAlign": "center",
       "verticalAlign": "middle",
-      "rowGap": 5,
       "blockClass": "minicart__empty"
     }
   },
@@ -157,15 +158,28 @@
     }
   },
 
+  "flex-layout.row#minicart__empty--text": {
+    "props": {
+      "blockClass": "minicart__empty--text",
+      "colSizing":"auto"
+    },
+    "children": [
+      "rich-text#minicart__empty--textone",
+      "rich-text#minicart__empty--texttwo"
+    ]
+  },
+
   "rich-text#minicart__empty--textone": {
     "props": {
-      "text": "¿Por qué tan solo?"
+      "text": "¿Por qué tan solo?",
+      "blockClass":"minicart__empty--textone"
     }
   },
 
   "rich-text#minicart__empty--texttwo": {
     "props": {
-      "text": "¿Tenemos ofertas del 50% este mes?"
+      "text": "¿Tenemos ofertas del 50% este mes?",
+      "blockClass":"minicart__empty--texttwo"
     }
   }
 }

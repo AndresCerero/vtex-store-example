@@ -88,3 +88,29 @@
     display: flex;
     justify-content: space-between;
 }
+
+/*---|MInicart|Empty|---*/
+
+
+.flexRow--minicart__empty--state{
+    padding: 0rem 1rem;
+}
+
+.flexColChild--minicart__empty{
+    padding-bottom: 0;
+}
+
+.flexRow--minicart__empty--state{
+    height: 100%;
+}
+
+.flexRowContent--minicart__empty--state{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.flexRowContent--minicart__empty--text{
+    display: flex;
+    flex-direction: column;
+}
