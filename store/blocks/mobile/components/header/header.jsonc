@@ -8,8 +8,6 @@
     }
   },
 
-
-
   "flex-layout.row#mobile__header": {
     "children": [
       "flex-layout.row#mobile__header--left",

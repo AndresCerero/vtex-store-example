@@ -1,0 +1,17 @@
+/*-----Mobile---*/
+
+@media (max-width: 639px) {   
+.flexRow--megamenu__drawer--top {
+    display: none;
+  }
+}
+/* Estilos para tabletas */
+@media (min-width: 640px) and (max-width: 1025px) {
+.flexRow--megamenu__drawer--top {
+    display: none;
+  }
+}
+
+/* Estilos para escritorios */
+@media (min-width: 1026px) {
+}

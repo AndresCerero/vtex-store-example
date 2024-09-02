@@ -1,15 +1,54 @@
-/*---Nav|Button login--*/
+/*---Nav|Button login|--*/
 
-.flexColChild--desktop__header--buttonlogin :global(.vtex-button){
+.flexColChild--desktop__header--buttonlogin :global(.vtex-button) {
+  background-color: rgb(2, 0, 0);
+  color: white;
+  border-radius: 40px;
+}
+
+.flexColChild--desktop__header--buttonlogin :global(.vtex-login-2-x-label) {
+  text-transform: capitalize;
+  padding-left: 0;
+  font-weight: var(--parrafos__w300);
+  font-size: var(--parrafos__s14);
+  display: inline-block;
+}
+
+@media (max-width: 639px) {
+  /*---|Button login|Mobile|Megamenu|--*/
+
+  .flexRowContent--mobile__login :global(.vtex-button) {
     background-color: rgb(2, 0, 0);
     color: white;
     border-radius: 40px;
-}
+  }
 
-.flexColChild--desktop__header--buttonlogin :global(.vtex-login-2-x-label){
+  .flexRowContent--mobile__login :global(.vtex-login-2-x-label) {
     text-transform: capitalize;
     padding-left: 0;
-    font-weight: var(--parrafos__w300);
-    font-size: var(--parrafos__s14);
+    font-weight: 300;
+    font-size: 14px;
     display: inline-block;
+  }
+}
+/* Estilos para tabletas */
+@media (min-width: 640px) and (max-width: 1025px) {
+  /*---|Button login|Mobile|Megamenu|--*/
+
+  .flexRowContent--mobile__login :global(.vtex-button) {
+    background-color: rgb(2, 0, 0);
+    color: white;
+    border-radius: 40px;
+  }
+
+  .flexRowContent--mobile__login :global(.vtex-login-2-x-label) {
+    text-transform: capitalize;
+    padding-left: 0;
+    font-weight: 300;
+    font-size: 14px;
+    display: inline-block;
+  }
+}
+/* Estilos para escritorios */
+@media (min-width: 1026px) {
 }
