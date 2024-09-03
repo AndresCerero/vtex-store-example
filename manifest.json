@@ -54,7 +54,8 @@
     "vtex.breadcrumb": "1.x",
     "vtex.sticky-layout": "0.x",
     "vtex.add-to-cart-button": "0.x",
-    "vtex.product-specifications": "1.x"
+    "vtex.product-specifications": "1.x",
+    "itgloberspartnercl.whatsapp-btn": "0.x"
   },
   "peerDependencies": {
     "vtex.mega-menu": "2.x",

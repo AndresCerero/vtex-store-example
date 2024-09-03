@@ -1,0 +1,12 @@
+{
+  "whatsapp-btn#global__btnwhatsapp": {
+    "title": "Boton whatsapp",
+    "props": {
+      "logo": "assets/img/whatsapp.png",
+      "phone": "300666999",
+      "message": "Hola en que te podemos ayudar",
+      "width": 60,
+      "height": 60
+    }
+  }
+}
